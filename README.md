@@ -859,7 +859,6 @@ The frontend uses Vite instead of Create React App.
 
 # Screenshots
 
-``` markdown
 ### Home Page
 <img width="1920" height="1080" alt="home" src="https://github.com/user-attachments/assets/8228a6d9-99c0-4aa6-aeb4-452070be11e0" />
 
@@ -907,8 +906,6 @@ The frontend uses Vite instead of Create React App.
 
 ### Tablet Responsive Layout
 <img width="1536" height="2048" alt="tablet" src="https://github.com/user-attachments/assets/c3b806f8-536c-42f6-88a1-0b25a5ce75fc" />
-
-```
 
 ------------------------------------------------------------------------
 
