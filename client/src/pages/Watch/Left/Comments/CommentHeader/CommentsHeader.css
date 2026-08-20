@@ -1,0 +1,61 @@
+/* Header */
+.yt-comments-header {
+  display: flex;
+
+  align-items: center;
+
+  gap: 32px;
+
+  margin-bottom: 28px;
+}
+
+/* Title */
+.yt-comments-title {
+  margin: 0;
+
+  color: var(--yt-text-primary);
+
+  font-size: 20px;
+
+  font-weight: 700;
+
+  line-height: 28px;
+}
+
+/* Sort */
+.yt-comments-sort {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  height: 36px;
+
+  padding: 0 8px;
+
+  border: none;
+
+  border-radius: 18px;
+
+  background: transparent;
+
+  color: var(--yt-text-primary);
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: background-color .15s ease;
+}
+
+.yt-comments-sort:hover {
+  background: var(--yt-hover);
+}
+
+/* Icon */
+.yt-comments-sort svg {
+  font-size: 20px;
+}

@@ -1,0 +1,72 @@
+/* Description */
+.yt-description {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+
+  margin-top: 18px;
+
+  padding: 14px 16px;
+
+  border-radius: 12px;
+
+  background: var(--yt-hover);
+
+  transition: background-color .15s ease;
+}
+
+/* Hover */
+.yt-description:hover {
+  background: var(--yt-hover-dark);
+}
+
+/* Meta */
+.yt-description-meta {
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  color: var(--yt-text-primary);
+}
+
+/* Text */
+.yt-description-text {
+  margin: 0;
+
+  color: var(--yt-text-primary);
+
+  font-size: 14px;
+
+  line-height: 1.6;
+
+  white-space: pre-wrap;
+
+  word-break: break-word;
+}
+
+/* Toggle */
+.yt-description-toggle {
+  align-self: flex-start;
+
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: var(--yt-text-primary);
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  cursor: pointer;
+}

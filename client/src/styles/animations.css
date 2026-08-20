@@ -1,0 +1,99 @@
+/* -- GLOBAL TRANSITIONS -- */
+
+.transition-fast {
+  transition: all var(--transition-fast);
+}
+
+.transition-normal {
+  transition: all var(--transition-normal);
+}
+
+.transition-slow {
+  transition: all var(--transition-slow);
+}
+
+/* FADE */
+
+.fade-in {
+  animation: fadeIn 180ms ease;
+}
+
+.fade {
+  animation: fadeIn 250ms ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* SCALE */
+
+.scale-hover {
+  transition: transform var(--transition-fast);
+}
+
+.scale-hover:hover {
+  transform: scale(1.03);
+}
+
+.scale-click:active {
+  transform: scale(0.98);
+}
+
+/* LIFT */
+
+.lift-hover {
+  transition:
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.lift-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+/* OPACITY */
+
+.opacity-hover {
+  transition: opacity var(--transition-fast);
+}
+
+.opacity-hover:hover {
+  opacity: 0.8;
+}
+
+/* ROTATION */
+
+.rotate-hover {
+  transition: transform var(--transition-fast);
+}
+
+.rotate-hover:hover {
+  transform: rotate(90deg);
+}
+
+/* DROPDOWN */
+
+.dropdown-enter {
+  animation: dropdownEnter 180ms ease;
+  transform-origin: top;
+}
+
+@keyframes dropdownEnter {
+  from {
+    opacity: 0;
+    transform: translateY(-6px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}

@@ -1,0 +1,322 @@
+/* Search Bar */
+
+.yt-searchbar {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  min-width: 0;
+
+  margin: 0;
+}
+
+/* Search Form */
+
+.yt-searchbar-form {
+  display: flex;
+  align-items: center;
+
+  flex: 1;
+
+  min-width: 0;
+}
+
+/* Input Wrapper */
+
+.yt-searchbar-input-wrapper {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  flex: 1;
+
+  min-width: 0;
+}
+
+/* Search Input */
+
+.yt-searchbar-input {
+  width: 100%;
+  min-width: 0;
+
+  height: 40px;
+
+  padding: 0 42px 0 16px;
+
+  box-sizing: border-box;
+
+  border: 1px solid var(--yt-border);
+  border-right: none;
+
+  border-radius: 20px 0 0 20px;
+
+  outline: none;
+
+  background: var(--yt-surface);
+
+  color: var(--yt-text-primary);
+
+  font-size: 16px;
+}
+
+/* Placeholder */
+
+.yt-searchbar-input::placeholder {
+  color: var(--yt-text-secondary);
+}
+
+/* Focus */
+
+.yt-searchbar-input:focus {
+  border-color: var(--yt-blue);
+
+  box-shadow: inset 1px 0 0 var(--yt-blue);
+}
+
+/* Search Form Focus */
+
+.yt-searchbar-form:focus-within
+  .yt-searchbar-button {
+  border-color: var(--yt-blue);
+}
+
+/* Clear Button */
+
+.yt-searchbar-clear {
+  position: absolute;
+
+  top: 50%;
+  right: 10px;
+
+  transform: translateY(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 28px;
+  height: 28px;
+
+  padding: 0;
+
+  border: none;
+  border-radius: 50%;
+
+  background: transparent;
+
+  color: var(--yt-text-secondary);
+
+  cursor: pointer;
+}
+
+.yt-searchbar-clear:hover {
+  background: var(--yt-hover);
+}
+
+.yt-searchbar-clear svg {
+  font-size: 18px;
+}
+
+/* Search Button */
+
+.yt-searchbar-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 64px;
+
+  width: 64px;
+  height: 40px;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+  border: 1px solid var(--yt-border);
+  border-left: none;
+
+  border-radius: 0 20px 20px 0;
+
+  background: var(--yt-hover);
+
+  color: var(--yt-text-primary);
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.yt-searchbar-button:hover {
+  background: var(--yt-hover-dark);
+}
+
+.yt-searchbar-button svg {
+  font-size: 24px;
+}
+
+/* Voice Search */
+
+.yt-mic-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 40px;
+
+  width: 40px;
+  height: 40px;
+
+  margin-left: 12px;
+
+  padding: 0;
+
+  border: none;
+  border-radius: 50%;
+
+  background: var(--yt-hover);
+
+  color: var(--yt-text-primary);
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.15s ease,
+    transform 0.15s ease;
+}
+
+.yt-mic-button:hover {
+  background: var(--yt-hover-dark);
+}
+
+.yt-mic-button:active {
+  transform: scale(0.96);
+}
+
+/* Mobile Back Button */
+
+.yt-mobile-search-back {
+  display: none;
+}
+
+/* Tablet And Mobile Search */
+
+@media (max-width: 900px) {
+  .yt-searchbar--mobile {
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: var(--header-height);
+
+    min-width: 0;
+
+    margin: 0;
+    padding: 0 8px;
+
+    box-sizing: border-box;
+
+    background: var(--yt-bg);
+
+    z-index: calc(
+      var(--header-z-index) + 1
+    );
+  }
+
+  /* Back Button */
+
+  .yt-searchbar--mobile
+    .yt-mobile-search-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 48px;
+
+    width: 48px;
+    height: 40px;
+
+    padding: 0;
+
+    border: none;
+
+    background: transparent;
+
+    color: var(--yt-text-primary);
+
+    cursor: pointer;
+  }
+
+  .yt-mobile-search-back svg {
+    font-size: 24px;
+  }
+
+  /* Mobile Search Form */
+
+  .yt-searchbar--mobile
+    .yt-searchbar-form {
+    flex: 1;
+
+    min-width: 0;
+  }
+
+  /* Mobile Input Wrapper */
+
+  .yt-searchbar--mobile
+    .yt-searchbar-input-wrapper {
+    flex: 1;
+
+    min-width: 0;
+  }
+
+  /* Mobile Input */
+
+  .yt-searchbar--mobile
+    .yt-searchbar-input {
+    width: 100%;
+
+    min-width: 0;
+  }
+
+  /* Mobile Search Button */
+
+  .yt-searchbar--mobile
+    .yt-searchbar-button {
+    flex: 0 0 56px;
+
+    width: 56px;
+  }
+
+  /* Mobile Suggestions */
+
+  .yt-searchbar--mobile
+    .yt-search-suggestions {
+    position: fixed;
+
+    top: var(--header-height);
+    right: 0;
+    left: 0;
+
+    width: 100%;
+
+    max-height: calc(
+      100vh - var(--header-height)
+    );
+
+    border: none;
+    border-radius: 0;
+
+    box-shadow: none;
+
+    background: var(--yt-bg);
+  }
+}

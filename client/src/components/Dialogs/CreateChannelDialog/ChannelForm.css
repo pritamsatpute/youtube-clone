@@ -1,0 +1,125 @@
+/* Form */
+.yt-channel-form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+/* Field */
+.yt-field {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+/* Label */
+.yt-field label {
+  color: var(--yt-text-secondary);
+
+  font-size: 13px;
+
+  font-weight: 500;
+}
+
+/* Input */
+.yt-field input {
+  height: 56px;
+
+  padding: 0 16px;
+
+  border: 1px solid var(--yt-border);
+
+  border-radius: 12px;
+
+  background: var(--yt-background);
+
+  color: var(--yt-text-primary);
+
+  font-size: 16px;
+
+  outline: none;
+
+  transition: .15s;
+}
+
+.yt-field input:focus {
+  border-color: #3ea6ff;
+}
+
+/* Handle Input */
+.yt-handle-input {
+  display: flex;
+  align-items: center;
+
+  height: 56px;
+
+  border: 1px solid var(--yt-border);
+
+  border-radius: 12px;
+
+  background: var(--yt-background);
+
+  transition: border-color .15s;
+}
+
+.yt-handle-input:focus-within {
+  border-color: #3ea6ff;
+}
+
+/* @ Prefix */
+.yt-handle-prefix {
+  padding-left: 16px;
+  padding-right: 2px;
+
+  color: var(--yt-text-secondary);
+
+  font-size: 16px;
+
+  font-weight: 400;
+
+  user-select: none;
+}
+
+/* Input */
+.yt-handle-input input {
+  flex: 1;
+
+  height: 100%;
+
+  border: none;
+
+  background: transparent;
+
+  color: var(--yt-text-primary);
+
+  font-size: 16px;
+
+  outline: none;
+
+  padding: 0 16px 0 2px;
+}
+
+
+/* URL */
+.yt-handle-url {
+  margin-top: -4px;
+
+  color: var(--yt-text-secondary);
+
+  font-size: 13px;
+}
+
+/* Error */
+.yt-form-error {
+  margin-top: -8px;
+
+  color: #f28b82;
+
+  font-size: 13px;
+
+  line-height: 1.4;
+}

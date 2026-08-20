@@ -1,0 +1,205 @@
+/* Card */
+.yt-video-card-skeleton {
+  width: 100%;
+
+  min-width: 0;
+}
+
+
+/* Thumbnail */
+.yt-video-card-skeleton-thumbnail {
+  position: relative;
+
+  width: 100%;
+
+  aspect-ratio: 16 / 9;
+
+  overflow: hidden;
+
+  border-radius: var(--radius-md);
+
+  background: var(--yt-hover);
+}
+
+
+/* Details */
+.yt-video-card-skeleton-details {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 12px;
+
+  margin-top: 12px;
+
+  width: 100%;
+}
+
+
+/* Avatar */
+.yt-video-card-skeleton-avatar {
+  width: 36px;
+
+  height: 36px;
+
+  flex-shrink: 0;
+
+  overflow: hidden;
+
+  border-radius: 50%;
+
+  background: var(--yt-hover);
+}
+
+
+/* Text */
+.yt-video-card-skeleton-text {
+  display: flex;
+
+  flex: 1;
+
+  flex-direction: column;
+
+  min-width: 0;
+}
+
+
+/* Title */
+.yt-video-card-skeleton-title {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 6px;
+
+  width: 100%;
+}
+
+
+/* Title Lines */
+.yt-video-card-skeleton-title
+.yt-skeleton-shimmer {
+  height: 16px;
+
+  border-radius: 4px;
+}
+
+
+/* First Title Line */
+.yt-video-card-skeleton-title
+.yt-skeleton-shimmer:first-child {
+  width: 94%;
+}
+
+
+/* Second Title Line */
+.yt-video-card-skeleton-title
+.yt-skeleton-shimmer:last-child {
+  width: 68%;
+}
+
+
+/* Channel */
+.yt-video-card-skeleton-channel {
+  width: 46%;
+
+  margin-top: 10px;
+}
+
+
+/* Channel Line */
+.yt-video-card-skeleton-channel
+.yt-skeleton-shimmer {
+  height: 13px;
+
+  border-radius: 4px;
+}
+
+
+/* Metadata */
+.yt-video-card-skeleton-meta {
+  width: 62%;
+
+  margin-top: 7px;
+}
+
+
+/* Metadata Line */
+.yt-video-card-skeleton-meta
+.yt-skeleton-shimmer {
+  height: 13px;
+
+  border-radius: 4px;
+}
+
+
+/* Shimmer */
+.yt-skeleton-shimmer {
+  position: relative;
+
+  overflow: hidden;
+
+  background: var(--yt-hover);
+}
+
+
+/* Shimmer Animation */
+.yt-skeleton-shimmer::after {
+  position: absolute;
+
+  top: 0;
+  left: -100%;
+
+  width: 100%;
+  height: 100%;
+
+  content: "";
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.12),
+      transparent
+    );
+
+  animation:
+    yt-skeleton-shimmer
+    1.5s infinite;
+}
+
+
+/* Animation */
+@keyframes yt-skeleton-shimmer {
+  100% {
+    left: 100%;
+  }
+}
+
+
+/* Dark Theme */
+[data-theme="dark"]
+.yt-skeleton-shimmer {
+  background: var(--yt-hover);
+}
+
+
+/* Mobile */
+@media (max-width: 640px) {
+  .yt-video-card-skeleton-details {
+    gap: 10px;
+
+    margin-top: 10px;
+  }
+
+  .yt-video-card-skeleton-avatar {
+    width: 34px;
+
+    height: 34px;
+  }
+
+  .yt-video-card-skeleton-title
+  .yt-skeleton-shimmer {
+    height: 15px;
+  }
+}

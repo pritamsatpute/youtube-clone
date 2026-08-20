@@ -1,0 +1,253 @@
+/* Notifications Menu */
+.yt-notifications-menu {
+  width: 480px;
+
+  max-height: 640px;
+
+  overflow: hidden;
+
+  background: var(--yt-hover);
+
+  border-radius: 12px;
+}
+
+
+/* Header */
+.yt-notifications-header {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  height: 56px;
+
+  padding: 0 16px;
+
+  background: var(--yt-hover);
+
+  flex-shrink: 0;
+}
+
+
+.yt-notifications-header h3 {
+  margin: 0;
+
+  font-size: 16px;
+
+  font-weight: 500;
+
+  color: var(--yt-text-primary);
+}
+
+
+/* List */
+.yt-notifications-list {
+  max-height: 584px;
+
+  overflow-y: auto;
+
+  overflow-x: hidden;
+
+  scrollbar-width: none;
+
+  -ms-overflow-style: none;
+}
+
+
+/* Hide Scrollbar */
+.yt-notifications-list::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* Notification Item */
+.yt-notification-item {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 14px;
+
+  width: 100%;
+
+  padding: 16px;
+
+  border: none;
+
+  background: transparent;
+
+  cursor: pointer;
+
+  text-align: left;
+
+  transition:
+    background-color 0.15s ease;
+}
+
+
+/* Unread Notification */
+.yt-notification-item.is-unread {
+  background: var(--yt-hover);
+}
+
+
+/* Read Notification */
+.yt-notification-item.is-read {
+  background: transparent;
+}
+
+
+/* Hover */
+.yt-notification-item:hover {
+  background: var(--yt-hover);
+}
+
+
+/* Avatar */
+.yt-notification-avatar {
+  width: 40px;
+
+  height: 40px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+}
+
+
+/* Content */
+.yt-notification-content {
+  flex: 1;
+
+  min-width: 0;
+}
+
+
+.yt-notification-content p {
+  margin: 0;
+
+  color: var(--yt-text-primary);
+
+  font-size: 14px;
+
+  line-height: 1.45;
+
+  word-break: break-word;
+}
+
+
+.yt-notification-content strong {
+  font-weight: 500;
+}
+
+
+.yt-notification-content span {
+  display: block;
+
+  margin-top: 4px;
+
+  color: var(--yt-text-secondary);
+
+  font-size: 12px;
+}
+
+
+/* Thumbnail */
+.yt-notification-thumbnail {
+  width: 86px;
+
+  height: 48px;
+
+  flex-shrink: 0;
+
+  border-radius: 8px;
+
+  object-fit: cover;
+}
+
+
+/* Unread Dot */
+.yt-notification-dot {
+  width: 8px;
+
+  height: 8px;
+
+  margin-top: 16px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #3ea6ff;
+}
+
+
+/* Empty State */
+.yt-notification-empty {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-height: 280px;
+
+  padding: 32px;
+
+  text-align: center;
+}
+
+
+.yt-notification-empty h4 {
+  margin: 0 0 8px;
+
+  color: var(--yt-text-primary);
+
+  font-size: 16px;
+
+  font-weight: 500;
+}
+
+
+.yt-notification-empty p {
+  margin: 0;
+
+  max-width: 280px;
+
+  color: var(--yt-text-secondary);
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+
+/* Focus */
+.yt-notification-item:focus-visible {
+  outline: 2px solid var(--yt-blue);
+
+  outline-offset: -2px;
+}
+
+
+/* Responsive */
+@media (max-width: 600px) {
+  .yt-notifications-menu {
+    width: min(
+      calc(100vw - 24px),
+      420px
+    );
+  }
+
+
+  .yt-notification-thumbnail {
+    width: 72px;
+
+    height: 40px;
+  }
+}

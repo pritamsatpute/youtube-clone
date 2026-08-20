@@ -1,0 +1,29 @@
+.empty-notifications{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:80px 20px;
+
+}
+
+.empty-notifications-icon{
+
+    font-size:72px;
+
+    margin-bottom:20px;
+
+}
+
+.empty-notifications p{
+
+    color:#606060;
+
+}

@@ -1,0 +1,187 @@
+/* Action Bar */
+.yt-action-bar {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-end;
+
+  gap: 8px;
+
+  flex: 0 0 auto;
+
+  width: max-content;
+
+  min-width: max-content;
+
+  flex-wrap: nowrap;
+}
+
+/* Like Group */
+.yt-action-group {
+  display: flex;
+
+  align-items: center;
+
+  flex-shrink: 0;
+
+  overflow: hidden;
+
+  border-radius: 999px;
+
+  background: var(--yt-hover);
+}
+
+/* Divider */
+.yt-action-divider {
+  width: 1px;
+
+  height: 20px;
+
+  flex-shrink: 0;
+
+  background: var(--yt-divider);
+}
+
+/* Button */
+.yt-action-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  height: 36px;
+
+  padding: 0 16px;
+
+  border: none;
+
+  border-radius: 999px;
+
+  background: var(--yt-hover);
+
+  color: var(--yt-text-primary);
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease,
+    transform 0.15s ease;
+}
+
+/* Hover */
+.yt-action-button:hover {
+  background: var(--yt-hover-dark);
+}
+
+/* Active */
+.yt-action-button:active {
+  transform: scale(0.98);
+}
+
+/* Active Button */
+.yt-action-button--active {
+  color: var(--yt-text-primary);
+}
+
+/* Active Icon */
+.yt-action-button--active svg {
+  color: var(--yt-text-primary);
+}
+
+/* Disabled */
+.yt-action-button:disabled {
+  cursor: default;
+
+  opacity: 0.7;
+}
+
+/* Icon Only */
+.yt-action-button.icon-only {
+  width: 36px;
+
+  padding: 0;
+}
+
+/* Icons */
+.yt-action-button svg {
+  flex-shrink: 0;
+
+  font-size: 20px;
+}
+
+/* Text */
+.yt-action-button span {
+  line-height: 1;
+}
+
+/* Menu Wrapper */
+.yt-action-menu-wrapper {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  flex-shrink: 0;
+}
+
+/* Tablet And Mobile */
+@media (max-width: 900px) {
+  .yt-action-bar {
+    flex: 0 0 auto;
+
+    width: auto;
+
+    min-width: 0;
+
+    gap: 4px;
+
+    justify-content: flex-end;
+  }
+
+  /* Compact Actions */
+  .yt-action-button {
+    width: 36px;
+
+    min-width: 36px;
+
+    padding: 0;
+  }
+
+  /* Like Group */
+  .yt-action-group {
+    flex-shrink: 0;
+  }
+
+  /* Hide Action Text */
+  .yt-action-button-text {
+    display: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .yt-action-bar {
+    gap: 6px;
+  }
+
+  .yt-action-button,
+  .yt-action-button.icon-only {
+    width: 36px;
+
+    min-width: 36px;
+
+    padding: 0;
+  }
+}

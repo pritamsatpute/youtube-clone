@@ -1,0 +1,45 @@
+/* Footer */
+.yt-sidebar-footer {
+  padding: var(--space-4);
+
+  border-top: 1px solid var(--yt-divider);
+}
+
+/* Link Groups */
+.yt-sidebar-footer-links {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 4px 8px;
+
+  margin-bottom: var(--space-4);
+}
+
+/* Links */
+.yt-sidebar-footer-link {
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: var(--yt-text-secondary);
+
+  font-size: 13px;
+  font-weight: var(--font-weight-medium);
+
+  cursor: pointer;
+}
+
+.yt-sidebar-footer-link:hover {
+  color: var(--yt-text-primary);
+}
+
+/* Copyright */
+.yt-sidebar-footer-copy {
+  margin: 0;
+
+  color: var(--yt-text-muted);
+
+  font-size: 12px;
+}

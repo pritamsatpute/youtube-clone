@@ -1,0 +1,184 @@
+/* Filter Wrapper */
+.filter-wrapper {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  width: 100%;
+
+  min-width: 0;
+
+  margin-bottom: 24px;
+}
+
+/* Filter Bar */
+.filter-bar {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  width: 100%;
+
+  min-width: 0;
+
+  overflow-x: auto;
+
+  overflow-y: hidden;
+
+  scroll-behavior: smooth;
+
+  scrollbar-width: none;
+
+  overscroll-behavior-inline: contain;
+}
+
+.filter-bar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Filter Chip */
+.filter-chip {
+  flex-shrink: 0;
+
+  height: 32px;
+
+  padding: 0 12px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: var(--yt-hover);
+
+  color: var(--yt-text-primary);
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  line-height: 32px;
+
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  transition:
+    background-color var(--transition-fast),
+    color var(--transition-fast);
+}
+
+/* Filter Chip Hover */
+.filter-chip:hover {
+  background: var(--yt-hover-dark);
+}
+
+/* Active Filter */
+.filter-chip.active {
+  background: var(--yt-text-primary);
+
+  color: var(--yt-bg);
+}
+
+/* Active Filter Hover */
+.filter-chip.active:hover {
+  background: var(--yt-text-primary);
+
+  color: var(--yt-bg);
+}
+
+/* Scroll Arrow */
+.filter-arrow {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  width: 40px;
+
+  height: 40px;
+
+  padding: 0;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: var(--yt-bg);
+
+  color: var(--yt-text-primary);
+
+  cursor: pointer;
+
+  z-index: 2;
+
+  transition:
+    background-color var(--transition-fast);
+}
+
+/* Scroll Arrow Hover */
+.filter-arrow:hover {
+  background: var(--yt-hover);
+}
+
+/* Scroll Arrow Icon */
+.filter-arrow svg {
+  width: 24px;
+
+  height: 24px;
+
+  font-size: 24px;
+}
+
+/* Left Arrow */
+.filter-arrow-left {
+  margin-right: 8px;
+}
+
+/* Right Arrow */
+.filter-arrow-right {
+  margin-left: 8px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .filter-wrapper {
+    margin-bottom: 20px;
+  }
+
+  .filter-bar {
+    gap: 8px;
+  }
+
+  .filter-chip {
+    height: 32px;
+
+    padding: 0 12px;
+
+    font-size: 13px;
+
+    line-height: 32px;
+  }
+
+  .filter-arrow {
+    width: 36px;
+
+    height: 36px;
+  }
+
+  .filter-arrow-left {
+    margin-right: 4px;
+  }
+
+  .filter-arrow-right {
+    margin-left: 4px;
+  }
+}

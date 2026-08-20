@@ -1,0 +1,52 @@
+/* Avatar Section */
+.yt-dialog-avatar-selector {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  margin-bottom: 34px;
+}
+
+/* Avatar */
+.yt-dialog-avatar-wrapper {
+  width: 120px;
+  height: 120px;
+
+  overflow: hidden;
+
+  border-radius: 50%;
+
+  background: var(--yt-hover);
+
+  margin-bottom: 18px;
+}
+
+.yt-dialog-avatar-image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+/* Select Picture */
+.yt-dialog-avatar-button {
+  border: none;
+
+  background: transparent;
+
+  color: #3ea6ff;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  cursor: pointer;
+}
+
+.yt-dialog-avatar-button:hover {
+  text-decoration: underline;
+}

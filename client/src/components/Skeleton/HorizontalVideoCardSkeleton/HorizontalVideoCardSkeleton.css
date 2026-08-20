@@ -1,0 +1,267 @@
+/* Card */
+.yt-horizontal-video-card-skeleton {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: var(--space-3);
+
+  width: 100%;
+}
+
+
+/* Thumbnail */
+.yt-horizontal-video-card-skeleton-thumbnail {
+  position: relative;
+
+  flex-shrink: 0;
+
+  width: 246px;
+
+  aspect-ratio: 16 / 9;
+
+  overflow: hidden;
+
+  border-radius: var(--radius-md);
+
+  background: var(--yt-hover);
+}
+
+
+/* Details */
+.yt-horizontal-video-card-skeleton-details {
+  display: flex;
+
+  flex: 1;
+
+  flex-direction: column;
+
+  min-width: 0;
+}
+
+
+/* Title */
+.yt-horizontal-video-card-skeleton-title {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 6px;
+
+  width: 100%;
+}
+
+
+/* Title Lines */
+.yt-horizontal-video-card-skeleton-title
+.yt-skeleton-shimmer {
+  height: 18px;
+
+  border-radius: 4px;
+}
+
+
+/* First Title Line */
+.yt-horizontal-video-card-skeleton-title
+.yt-skeleton-shimmer:first-child {
+  width: 92%;
+}
+
+
+/* Second Title Line */
+.yt-horizontal-video-card-skeleton-title
+.yt-skeleton-shimmer:last-child {
+  width: 64%;
+}
+
+
+/* Metadata */
+.yt-horizontal-video-card-skeleton-meta {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 6px;
+
+  width: 100%;
+
+  margin-top: 10px;
+}
+
+
+/* Metadata Lines */
+.yt-horizontal-video-card-skeleton-meta
+.yt-skeleton-shimmer {
+  height: 13px;
+
+  border-radius: 4px;
+}
+
+
+/* First Metadata Line */
+.yt-horizontal-video-card-skeleton-meta
+.yt-skeleton-shimmer:first-child {
+  width: 28%;
+}
+
+
+/* Second Metadata Line */
+.yt-horizontal-video-card-skeleton-meta
+.yt-skeleton-shimmer:last-child {
+  width: 22%;
+}
+
+
+/* Description */
+.yt-horizontal-video-card-skeleton-description {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 6px;
+
+  width: 100%;
+
+  margin-top: 12px;
+}
+
+
+/* Description Lines */
+.yt-horizontal-video-card-skeleton-description
+.yt-skeleton-shimmer {
+  height: 13px;
+
+  border-radius: 4px;
+}
+
+
+/* First Description Line */
+.yt-horizontal-video-card-skeleton-description
+.yt-skeleton-shimmer:first-child {
+  width: 88%;
+}
+
+
+/* Second Description Line */
+.yt-horizontal-video-card-skeleton-description
+.yt-skeleton-shimmer:last-child {
+  width: 68%;
+}
+
+
+/* Menu */
+.yt-horizontal-video-card-skeleton-menu {
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: center;
+
+  width: 40px;
+
+  height: 40px;
+
+  flex-shrink: 0;
+}
+
+
+/* Menu Circle */
+.yt-horizontal-video-card-skeleton-menu
+.yt-skeleton-shimmer {
+  width: 32px;
+
+  height: 32px;
+
+  border-radius: 50%;
+}
+
+
+/* Shimmer */
+.yt-horizontal-video-card-skeleton
+.yt-skeleton-shimmer {
+  position: relative;
+
+  overflow: hidden;
+
+  background: var(--yt-hover);
+}
+
+
+/* Shimmer Animation */
+.yt-horizontal-video-card-skeleton
+.yt-skeleton-shimmer::after {
+  position: absolute;
+
+  top: 0;
+
+  left: -100%;
+
+  width: 100%;
+
+  height: 100%;
+
+  content: "";
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.12),
+      transparent
+    );
+
+  animation:
+    yt-horizontal-skeleton-shimmer
+    1.5s infinite;
+}
+
+
+/* Animation */
+@keyframes yt-horizontal-skeleton-shimmer {
+  100% {
+    left: 100%;
+  }
+}
+
+
+/* Tablet */
+@media (max-width: 768px) {
+  .yt-horizontal-video-card-skeleton {
+    gap: var(--space-3);
+  }
+
+  .yt-horizontal-video-card-skeleton-thumbnail {
+    width: 180px;
+  }
+
+  .yt-horizontal-video-card-skeleton-description {
+    display: none;
+  }
+
+  .yt-horizontal-video-card-skeleton-title
+  .yt-skeleton-shimmer {
+    height: 16px;
+  }
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+  .yt-horizontal-video-card-skeleton {
+    gap: 4px;
+  }
+
+  .yt-horizontal-video-card-skeleton-thumbnail {
+    width: 150px;
+  }
+
+  .yt-horizontal-video-card-skeleton-meta {
+    margin-top: 6px;
+  }
+
+  .yt-horizontal-video-card-skeleton-menu {
+    width: 36px;
+
+    height: 36px;
+  }
+}

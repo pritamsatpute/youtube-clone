@@ -1,0 +1,208 @@
+/* Subscriptions Page */
+.subscriptions-page {
+  width: 100%;
+
+  min-height: calc(100vh - var(--header-height));
+
+  padding: 24px;
+}
+
+/* Main */
+.subscriptions-main {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 32px;
+
+  width: 100%;
+}
+
+/* Feed */
+.subscriptions-feed {
+  flex: 1;
+
+  min-width: 0;
+}
+
+/* Page State */
+.subscriptions-page-state {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-height: 40vh;
+
+  padding: 24px;
+
+  color: var(--yt-text-secondary);
+
+  font-size: 14px;
+
+  text-align: center;
+}
+
+/* Error */
+.subscriptions-page-error {
+  color: var(--yt-text-primary);
+}
+
+/* Guest Page */
+.subscriptions-page-guest {
+  display: flex;
+
+  flex-direction: column;
+}
+
+/* Guest Content */
+.subscriptions-guest-content {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-height: 55vh;
+
+  padding: 40px 20px;
+
+  text-align: center;
+}
+
+/* Guest Icon */
+.subscriptions-guest-icon {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 96px;
+
+  height: 96px;
+
+  margin-bottom: 24px;
+
+  border-radius: 50%;
+
+  background: var(--yt-hover);
+}
+
+/* Guest Icon SVG */
+.subscriptions-guest-icon svg {
+  font-size: 48px;
+
+  color: var(--yt-text-primary);
+}
+
+/* Guest Title */
+.subscriptions-guest-content h2 {
+  margin: 0 0 12px;
+
+  color: var(--yt-text-primary);
+
+  font-size: 24px;
+
+  font-weight: 500;
+
+  line-height: 1.3;
+}
+
+/* Guest Description */
+.subscriptions-guest-content p {
+  max-width: 420px;
+
+  margin: 0 0 24px;
+
+  color: var(--yt-text-secondary);
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+/* Guest Sign In */
+.subscriptions-guest-signin {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  height: 40px;
+
+  padding: 0 20px;
+
+  border: 1px solid var(--yt-border);
+
+  border-radius: 999px;
+
+  background: transparent;
+
+  color: var(--yt-blue);
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  text-decoration: none;
+
+  transition:
+    background-color var(--transition-fast),
+    border-color var(--transition-fast);
+}
+
+/* Guest Sign In Hover */
+.subscriptions-guest-signin:hover {
+  background: rgba(6, 95, 212, 0.08);
+
+  border-color: var(--yt-blue);
+}
+
+/* Tablet */
+@media (max-width: 1000px) {
+  .subscriptions-page {
+    padding: 20px;
+  }
+
+  .subscriptions-main {
+    flex-direction: column;
+
+    gap: 20px;
+  }
+
+  .subscriptions-feed {
+    width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .subscriptions-page {
+    padding: 16px;
+  }
+
+  .subscriptions-guest-content {
+    min-height: 50vh;
+
+    padding: 32px 16px;
+  }
+
+  .subscriptions-guest-icon {
+    width: 80px;
+
+    height: 80px;
+  }
+
+  .subscriptions-guest-icon svg {
+    font-size: 40px;
+  }
+
+  .subscriptions-guest-content h2 {
+    font-size: 20px;
+  }
+}

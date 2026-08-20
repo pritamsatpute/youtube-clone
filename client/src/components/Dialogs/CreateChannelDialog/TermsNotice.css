@@ -1,0 +1,26 @@
+/* Terms */
+.yt-terms {
+  margin-top: 28px;
+
+  color: var(--yt-text-secondary);
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+/* Paragraph */
+.yt-terms p {
+  margin: 0 0 12px;
+}
+
+/* Link */
+.yt-terms a {
+  color: #3ea6ff;
+
+  text-decoration: none;
+}
+
+.yt-terms a:hover {
+  text-decoration: underline;
+}

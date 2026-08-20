@@ -1,0 +1,557 @@
+/* Channel Skeleton */
+.yt-channel-skeleton {
+  width: 100%;
+
+  min-width: 0;
+
+  max-width: 1360px;
+
+  margin: 0 auto;
+
+  padding: 0 24px 40px;
+}
+
+
+/* Shimmer Base */
+.yt-channel-skeleton-shimmer {
+  width: 100%;
+  height: 100%;
+
+  border-radius: inherit;
+
+  background:
+    linear-gradient(
+      90deg,
+      var(--yt-hover) 25%,
+      var(--yt-hover-dark) 50%,
+      var(--yt-hover) 75%
+    );
+
+  background-size: 200% 100%;
+
+  animation:
+    yt-channel-skeleton-shimmer
+    1.5s ease-in-out infinite;
+}
+
+
+/* Shimmer Animation */
+@keyframes yt-channel-skeleton-shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+
+/* Banner */
+.yt-channel-skeleton-banner {
+  position: relative;
+
+  width: 100%;
+
+  margin-bottom: var(--space-6);
+
+  overflow: hidden;
+
+  border-radius: var(--radius-xl);
+
+  aspect-ratio: 6 / 1;
+
+  background: var(--yt-hover);
+}
+
+
+/* Header */
+.yt-channel-skeleton-header {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: var(--space-5);
+
+  margin-bottom: var(--space-6);
+
+  min-width: 0;
+}
+
+
+/* Avatar */
+.yt-channel-skeleton-avatar {
+  width: 128px;
+  height: 128px;
+
+  flex-shrink: 0;
+
+  overflow: hidden;
+
+  border-radius: 50%;
+
+  background: var(--yt-hover);
+}
+
+
+/* Header Information */
+.yt-channel-skeleton-info {
+  flex: 1;
+
+  min-width: 0;
+}
+
+
+/* Channel Name */
+.yt-channel-skeleton-name {
+  width: 280px;
+  height: 38px;
+
+  margin-top: 4px;
+
+  overflow: hidden;
+
+  border-radius: 6px;
+
+  background: var(--yt-hover);
+}
+
+
+/* Meta */
+.yt-channel-skeleton-meta {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-top: 10px;
+}
+
+
+/* Meta Line */
+.yt-channel-skeleton-meta-line {
+  width: 120px;
+  height: 15px;
+
+  overflow: hidden;
+
+  border-radius: 4px;
+
+  background: var(--yt-hover);
+}
+
+
+/* Meta Short */
+.yt-channel-skeleton-meta-line.short {
+  width: 92px;
+}
+
+
+/* Meta Shorter */
+.yt-channel-skeleton-meta-line.shorter {
+  width: 70px;
+}
+
+
+/* Description */
+.yt-channel-skeleton-description {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+
+  max-width: 720px;
+
+  margin-top: 14px;
+}
+
+
+/* Description Line */
+.yt-channel-skeleton-description-line {
+  width: 100%;
+  height: 14px;
+
+  overflow: hidden;
+
+  border-radius: 4px;
+
+  background: var(--yt-hover);
+}
+
+
+/* Description Medium */
+.yt-channel-skeleton-description-line.medium {
+  width: 72%;
+}
+
+
+/* Links */
+.yt-channel-skeleton-links {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-top: 10px;
+}
+
+
+/* Link */
+.yt-channel-skeleton-link {
+  width: 120px;
+  height: 14px;
+
+  overflow: hidden;
+
+  border-radius: 4px;
+
+  background: var(--yt-hover);
+}
+
+
+/* Link Short */
+.yt-channel-skeleton-link.short {
+  width: 90px;
+}
+
+
+/* Actions */
+.yt-channel-skeleton-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: 18px;
+}
+
+
+/* Action */
+.yt-channel-skeleton-action {
+  width: 126px;
+  height: 40px;
+
+  overflow: hidden;
+
+  border-radius: 999px;
+
+  background: var(--yt-hover);
+}
+
+
+/* Secondary Action */
+.yt-channel-skeleton-action.secondary {
+  width: 142px;
+}
+
+
+/* Tabs */
+.yt-channel-skeleton-tabs {
+  display: flex;
+
+  align-items: center;
+
+  gap: 32px;
+
+  width: 100%;
+
+  min-width: 0;
+
+  height: 48px;
+
+  border-bottom: 1px solid var(--yt-border);
+
+  overflow: hidden;
+}
+
+
+/* Tab */
+.yt-channel-skeleton-tab {
+  position: relative;
+
+  flex-shrink: 0;
+
+  width: 54px;
+  height: 15px;
+
+  overflow: hidden;
+
+  border-radius: 4px;
+
+  background: var(--yt-hover);
+}
+
+
+/* Tab Active */
+.yt-channel-skeleton-tab.active {
+  width: 48px;
+}
+
+
+/* Active Indicator */
+.yt-channel-skeleton-tab.active::after {
+  content: "";
+
+  position: absolute;
+
+  right: 0;
+  bottom: -17px;
+  left: 0;
+
+  height: 3px;
+
+  border-radius: 3px 3px 0 0;
+
+  background: var(--yt-hover-dark);
+}
+
+
+/* Content */
+.yt-channel-skeleton-content {
+  width: 100%;
+
+  min-width: 0;
+
+  padding-top: 24px;
+}
+
+
+/* Video Grid */
+.yt-channel-skeleton-video-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fill,
+      minmax(280px, 1fr)
+    );
+
+  column-gap: 16px;
+
+  row-gap: 36px;
+
+  width: 100%;
+
+  align-items: start;
+}
+
+
+/* Video */
+.yt-channel-skeleton-video {
+  width: 100%;
+
+  min-width: 0;
+}
+
+
+/* Thumbnail */
+.yt-channel-skeleton-thumbnail {
+  width: 100%;
+
+  aspect-ratio: 16 / 9;
+
+  overflow: hidden;
+
+  border-radius: var(--radius-lg);
+
+  background: var(--yt-hover);
+}
+
+
+/* Video Info */
+.yt-channel-skeleton-video-info {
+  padding-top: 12px;
+}
+
+
+/* Video Title */
+.yt-channel-skeleton-video-title {
+  width: 92%;
+  height: 15px;
+
+  overflow: hidden;
+
+  border-radius: 4px;
+
+  background: var(--yt-hover);
+}
+
+
+/* Video Title Second */
+.yt-channel-skeleton-video-title.second {
+  width: 64%;
+
+  margin-top: 7px;
+}
+
+
+/* Video Meta */
+.yt-channel-skeleton-video-meta {
+  width: 42%;
+  height: 13px;
+
+  margin-top: 10px;
+
+  overflow: hidden;
+
+  border-radius: 4px;
+
+  background: var(--yt-hover);
+}
+
+
+/* Large Desktop */
+@media (min-width: 1600px) {
+  .yt-channel-skeleton {
+    max-width: 1400px;
+  }
+
+  .yt-channel-skeleton-video-grid {
+    grid-template-columns:
+      repeat(
+        auto-fill,
+        minmax(300px, 1fr)
+      );
+
+    column-gap: 20px;
+
+    row-gap: 40px;
+  }
+}
+
+
+/* Tablet */
+@media (max-width: 1000px) {
+  .yt-channel-skeleton {
+    padding-inline: 20px;
+  }
+
+  .yt-channel-skeleton-content {
+    padding-top: 20px;
+  }
+}
+
+
+/* Tablet Header */
+@media (max-width: 900px) {
+  .yt-channel-skeleton-header {
+    gap: 20px;
+  }
+
+  .yt-channel-skeleton-avatar {
+    width: 96px;
+    height: 96px;
+  }
+
+  .yt-channel-skeleton-name {
+    width: 240px;
+    height: 34px;
+  }
+
+  .yt-channel-skeleton-video-grid {
+    grid-template-columns:
+      repeat(
+        auto-fill,
+        minmax(240px, 1fr)
+      );
+
+    column-gap: 14px;
+
+    row-gap: 28px;
+  }
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+  .yt-channel-skeleton {
+    padding-inline: 12px;
+
+    padding-bottom: 32px;
+  }
+
+  .yt-channel-skeleton-banner {
+    border-radius: var(--radius-lg);
+
+    aspect-ratio: 4 / 1;
+  }
+
+  .yt-channel-skeleton-content {
+    padding-top: 20px;
+  }
+
+  .yt-channel-skeleton-tabs {
+    gap: 24px;
+
+    height: 46px;
+  }
+
+  .yt-channel-skeleton-tab {
+    height: 14px;
+  }
+}
+
+
+/* Small Mobile */
+@media (max-width: 640px) {
+  .yt-channel-skeleton-header {
+    flex-direction: column;
+
+    gap: 16px;
+  }
+
+  .yt-channel-skeleton-avatar {
+    width: 88px;
+    height: 88px;
+  }
+
+  .yt-channel-skeleton-name {
+    width: 210px;
+
+    height: 30px;
+  }
+
+  .yt-channel-skeleton-meta {
+    flex-wrap: wrap;
+  }
+
+  .yt-channel-skeleton-description {
+    max-width: 100%;
+  }
+
+  .yt-channel-skeleton-actions {
+    width: 100%;
+  }
+
+  .yt-channel-skeleton-action {
+    flex: 1;
+
+    width: auto;
+  }
+
+  .yt-channel-skeleton-tabs {
+    gap: 20px;
+
+    height: 44px;
+  }
+
+  .yt-channel-skeleton-video-grid {
+    grid-template-columns: 1fr;
+
+    column-gap: 0;
+
+    row-gap: 28px;
+  }
+}
+
+
+/* Very Small Mobile */
+@media (max-width: 480px) {
+  .yt-channel-skeleton {
+    padding-inline: 8px;
+  }
+}

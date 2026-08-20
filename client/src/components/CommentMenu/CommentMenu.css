@@ -1,0 +1,51 @@
+/* Comment Menu */
+.yt-comment-menu-dropdown {
+  position: absolute;
+
+  top: 36px;
+
+  right: 0;
+
+  z-index: var(--z-dropdown);
+
+  min-width:  130px;
+
+  max-height: none;
+
+  overflow: hidden;
+
+  padding: 8px 0;
+
+  border: none;
+
+  border-radius: var(--radius-lg);
+
+  background: var(--yt-hover);
+
+  box-shadow: var(--shadow-lg);
+}
+
+
+/* Sections */
+.yt-comment-menu-dropdown > div {
+  width: 100%;
+}
+
+
+/* Divider */
+.yt-comment-menu-dropdown
+  .yt-dropdown-divider {
+  margin: 6px 0;
+}
+
+
+/* Mobile */
+@media (max-width: 480px) {
+  .yt-comment-menu-dropdown {
+    width: 200px;
+
+    min-width: 200px;
+
+    max-width: calc(100vw - 16px);
+  }
+}

@@ -1,0 +1,180 @@
+/* Comment Input */
+.yt-comment-input {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 16px;
+
+  width: 100%;
+
+  margin-bottom: 32px;
+}
+
+
+/* Avatar */
+.yt-comment-input-avatar {
+  width: 40px;
+
+  height: 40px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+  background: var(--yt-hover);
+}
+
+
+/* Form */
+.yt-comment-input-form {
+  flex: 1;
+
+  min-width: 0;
+}
+
+
+/* Input */
+.yt-comment-input-textbox {
+  width: 100%;
+
+  padding: 8px 0;
+
+  border: none;
+
+  border-bottom: 1px solid var(--yt-divider);
+
+  background: transparent;
+
+  color: var(--yt-text-primary);
+
+  font-size: 14px;
+
+  line-height: 1.5;
+
+  outline: none;
+
+  transition:
+    border-color var(--transition-fast);
+}
+
+
+.yt-comment-input-textbox::placeholder {
+  color: var(--yt-text-secondary);
+}
+
+
+.yt-comment-input-textbox:focus {
+  border-bottom: 2px solid var(--yt-text-primary);
+}
+
+
+/* Actions */
+.yt-comment-input-actions {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-end;
+
+  gap: 10px;
+
+  margin-top: 14px;
+}
+
+
+/* Cancel */
+.yt-comment-input-cancel {
+  height: 36px;
+
+  padding: 0 16px;
+
+  border: none;
+
+  border-radius: 999px;
+
+  background: transparent;
+
+  color: var(--yt-text-primary);
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition:
+    background-color var(--transition-fast);
+}
+
+
+.yt-comment-input-cancel:hover {
+  background: var(--yt-hover);
+}
+
+
+/* Submit */
+.yt-comment-input-submit {
+  height: 36px;
+
+  padding: 0 18px;
+
+  border: none;
+
+  border-radius: 999px;
+
+  background: var(--yt-text-primary);
+
+  color: var(--yt-bg);
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition:
+    opacity var(--transition-fast);
+}
+
+
+.yt-comment-input-submit:hover:not(:disabled) {
+  opacity: 0.92;
+}
+
+
+.yt-comment-input-submit:disabled {
+  opacity: 0.45;
+
+  cursor: not-allowed;
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+  .yt-comment-input {
+    gap: 12px;
+  }
+
+  .yt-comment-input-avatar {
+    width: 36px;
+
+    height: 36px;
+  }
+}
+
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .yt-comment-input {
+    gap: 10px;
+  }
+
+  .yt-comment-input-avatar {
+    width: 32px;
+
+    height: 32px;
+  }
+}

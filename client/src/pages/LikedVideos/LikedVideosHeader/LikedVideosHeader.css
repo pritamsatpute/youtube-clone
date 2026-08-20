@@ -1,0 +1,32 @@
+/* Header */
+.liked-videos-header {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 6px;
+}
+
+/* Title */
+.liked-videos-header h1 {
+  margin: 0;
+
+  color: var(--yt-text-primary);
+
+  font-size: 28px;
+
+  font-weight: 600;
+
+  line-height: 1.3;
+}
+
+/* Description */
+.liked-videos-header p {
+  margin: 0;
+
+  color: var(--yt-text-secondary);
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}

@@ -1,0 +1,67 @@
+/* Dialog Overlay */
+.yt-dialog-overlay {
+  position: fixed;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 24px;
+
+  background: rgba(0, 0, 0, 0.6);
+
+  z-index: 3000;
+
+  animation: yt-dialog-fade 0.18s ease;
+}
+
+/* Dialog */
+.yt-dialog {
+  width: 100%;
+  max-width: 560px;
+  max-height: calc(100vh - 48px);
+
+  overflow: hidden;
+
+  border-radius: 12px;
+
+  background: var(--yt-white);
+
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.24),
+    0 0 1px rgba(0, 0, 0, 0.16);
+
+  animation: yt-dialog-scale 0.18s ease;
+}
+
+/* Dialog Content Scroll */
+.yt-dialog > * {
+  max-height: inherit;
+}
+
+/* Fade Animation */
+@keyframes yt-dialog-fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Scale Animation */
+@keyframes yt-dialog-scale {
+  from {
+    opacity: 0;
+
+    transform: scale(0.96);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: scale(1);
+  }
+}

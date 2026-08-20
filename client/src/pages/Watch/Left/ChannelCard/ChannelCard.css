@@ -1,0 +1,183 @@
+/* Channel Card */
+.yt-watch-channel-card {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  flex: 0 1 auto;
+
+  min-width: 0;
+}
+
+/* Avatar Link */
+.yt-watch-channel-avatar-link {
+  display: flex;
+
+  flex-shrink: 0;
+
+  text-decoration: none;
+}
+
+/* Avatar */
+.yt-watch-channel-avatar {
+  display: block;
+
+  width: 40px;
+
+  height: 40px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+  background: var(--yt-hover);
+}
+
+/* Channel Info */
+.yt-watch-channel-info {
+  display: flex;
+
+  flex: 0 1 auto;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  min-width: 0;
+}
+
+/* Channel Name */
+.yt-watch-channel-name {
+  display: block;
+
+  max-width: 100%;
+
+  overflow: hidden;
+
+  color: var(--yt-text-primary);
+
+  text-decoration: none;
+
+  font-size: 16px;
+
+  font-weight: 500;
+
+  line-height: 20px;
+
+  white-space: nowrap;
+
+  text-overflow: ellipsis;
+}
+
+/* Subscribers */
+.yt-watch-channel-subscribers {
+  margin: 2px 0 0;
+
+  color: var(--yt-text-secondary);
+
+  font-size: 12px;
+
+  line-height: 16px;
+}
+
+/* Subscribe */
+.yt-watch-subscribe-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  height: 36px;
+
+  min-width: 92px;
+
+  padding: 0 16px;
+
+  border: none;
+
+  border-radius: 999px;
+
+  background: var(--yt-text-primary);
+
+  color: var(--yt-bg);
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  transition:
+    background-color var(--transition-fast),
+    opacity var(--transition-fast);
+}
+
+/* Subscribe Hover */
+.yt-watch-subscribe-button:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+/* Subscribed */
+.yt-watch-subscribe-button.is-subscribed {
+  background: var(--yt-hover);
+
+  color: var(--yt-text-primary);
+}
+
+/* Subscribed Hover */
+.yt-watch-subscribe-button.is-subscribed:hover:not(:disabled) {
+  background: var(--yt-hover-dark);
+}
+
+/* Disabled */
+.yt-watch-subscribe-button:disabled {
+  opacity: 0.65;
+
+  cursor: not-allowed;
+}
+
+/* Dark Theme */
+[data-theme="dark"]
+.yt-watch-subscribe-button:not(.is-subscribed) {
+  background: #f1f1f1;
+
+  color: #0f0f0f;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .yt-watch-channel-card {
+    gap: 10px;
+  }
+
+  .yt-watch-channel-avatar {
+    width: 36px;
+
+    height: 36px;
+  }
+
+  .yt-watch-channel-name {
+    font-size: 14px;
+  }
+
+  .yt-watch-channel-subscribers {
+    font-size: 11px;
+  }
+
+  .yt-watch-subscribe-button {
+    height: 34px;
+
+    min-width: 82px;
+
+    padding: 0 14px;
+
+    font-size: 13px;
+  }
+}

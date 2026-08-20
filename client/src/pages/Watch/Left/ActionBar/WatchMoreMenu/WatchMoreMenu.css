@@ -1,0 +1,13 @@
+/* Menu */
+.yt-watch-more-menu {
+  width: 260px;
+}
+
+/* Divider */
+.yt-watch-more-divider {
+  height: 1px;
+
+  margin: 8px 0;
+
+  background: var(--yt-divider);
+}

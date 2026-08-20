@@ -1,0 +1,407 @@
+/* Header */
+.yt-channel-header {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: var(--space-5);
+
+  margin-bottom: var(--space-6);
+
+  min-width: 0;
+}
+
+/* Avatar Wrapper */
+.yt-channel-avatar-wrapper {
+  position: relative;
+
+  width: 128px;
+  height: 128px;
+
+  flex-shrink: 0;
+}
+
+/* Avatar */
+.yt-channel-avatar {
+  display: block;
+
+  width: 128px;
+  height: 128px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+  background: var(--yt-hover);
+
+  user-select: none;
+}
+
+/* Hidden Avatar Input */
+.yt-channel-avatar-input {
+  display: none;
+}
+
+/* Profile Edit */
+.yt-channel-avatar-edit {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  transform: translate(-50%, -50%);
+
+  min-width: 64px;
+  height: 36px;
+
+  padding: 0 14px;
+
+  border: none;
+
+  border-radius: 999px;
+
+  background: rgba(15, 15, 15, 0.88);
+
+  color: #fff;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+  opacity: 0;
+
+  transition:
+    opacity var(--transition-fast),
+    background-color var(--transition-fast);
+}
+
+/* Show Edit on Avatar Hover */
+.yt-channel-avatar-wrapper:hover
+  .yt-channel-avatar-edit {
+  opacity: 1;
+}
+
+/* Edit Hover */
+.yt-channel-avatar-edit:hover {
+  background: rgba(15, 15, 15, 1);
+}
+
+/* Edit Focus */
+.yt-channel-avatar-edit:focus-visible {
+  opacity: 1;
+
+  outline: 2px solid var(--yt-blue);
+
+  outline-offset: 2px;
+}
+
+/* Edit Disabled */
+.yt-channel-avatar-edit:disabled {
+  cursor: default;
+
+  opacity: 0.7;
+}
+
+/* Information */
+.yt-channel-info {
+  flex: 1;
+
+  min-width: 0;
+}
+
+/* Name */
+.yt-channel-name {
+  margin: 4px 0 0;
+
+  color: var(--yt-text-primary);
+
+  font-size: 32px;
+
+  font-weight: 700;
+
+  line-height: 1.2;
+}
+
+/* Meta */
+.yt-channel-meta {
+  display: flex;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 6px;
+
+  margin-top: 8px;
+
+  color: var(--yt-text-primary);
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  line-height: 1.4;
+}
+
+/* Description */
+.yt-channel-description {
+  max-width: 720px;
+
+  margin-top: 12px;
+
+  color: var(--yt-text-secondary);
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+/* Expanded Description */
+.yt-channel-description-expanded {
+  white-space: pre-wrap;
+}
+
+/* More Text */
+.yt-channel-more-text {
+  margin-left: 4px;
+
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: var(--yt-text-primary);
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.yt-channel-more-text:hover {
+  text-decoration: underline;
+}
+
+/* Links */
+.yt-channel-links {
+  display: flex;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 5px;
+
+  margin-top: 8px;
+
+  max-width: 720px;
+
+  color: var(--yt-blue);
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+/* Link Icon */
+.yt-channel-links-icon {
+  margin-right: 1px;
+
+  font-size: 14px;
+}
+
+/* Link */
+.yt-channel-link {
+  color: var(--yt-blue);
+
+  font-weight: 500;
+
+  text-decoration: none;
+}
+
+.yt-channel-link:hover {
+  text-decoration: underline;
+}
+
+/* More Links */
+.yt-channel-links-more {
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: var(--yt-blue);
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  cursor: pointer;
+}
+
+.yt-channel-links-more:hover {
+  text-decoration: underline;
+}
+
+/* Actions */
+.yt-channel-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: 16px;
+}
+
+/* Button */
+.yt-channel-action {
+  min-height: 40px;
+
+  padding: 0 18px;
+
+  border: none;
+
+  border-radius: 999px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition:
+    background-color var(--transition-fast),
+    opacity var(--transition-fast);
+}
+
+/* Disabled */
+.yt-channel-action:disabled {
+  cursor: default;
+
+}
+
+/* Subscribe */
+.yt-channel-action.subscribe {
+  background: var(--yt-text-primary);
+
+  color: var(--yt-bg);
+}
+
+.yt-channel-action.subscribe:hover {
+  opacity: 0.9;
+}
+
+/* Subscribed */
+.yt-channel-action.subscribed {
+  background: var(--yt-hover);
+
+  color: var(--yt-text-primary);
+}
+
+.yt-channel-action.subscribed:hover {
+  background: var(--yt-hover-dark);
+}
+
+/* Join */
+.yt-channel-action.join {
+  background: var(--yt-hover);
+
+  color: var(--yt-text-primary);
+}
+
+.yt-channel-action.join:hover {
+  background: var(--yt-hover-dark);
+}
+
+/* Owner */
+.yt-channel-action.secondary {
+  background: var(--yt-hover);
+
+  color: var(--yt-text-primary);
+}
+
+.yt-channel-action.secondary:hover {
+  background: var(--yt-hover-dark);
+}
+
+/* Error */
+.yt-channel-action-error {
+  margin-top: 8px;
+
+  color: var(--yt-text-secondary);
+
+  font-size: 13px;
+
+  line-height: 1.4;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .yt-channel-header {
+    gap: 20px;
+  }
+
+  .yt-channel-avatar-wrapper {
+    width: 96px;
+    height: 96px;
+  }
+
+  .yt-channel-avatar {
+    width: 96px;
+    height: 96px;
+  }
+
+  .yt-channel-name {
+    font-size: 28px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .yt-channel-header {
+    flex-direction: column;
+
+    gap: 16px;
+  }
+
+  .yt-channel-avatar-wrapper {
+    width: 88px;
+    height: 88px;
+  }
+
+  .yt-channel-avatar {
+    width: 88px;
+    height: 88px;
+  }
+
+  .yt-channel-name {
+    font-size: 24px;
+  }
+
+  .yt-channel-actions {
+    width: 100%;
+  }
+
+  .yt-channel-action {
+    flex: 1;
+  }
+  
+  .yt-channel-avatar-edit {
+    opacity: 1;
+  }
+}

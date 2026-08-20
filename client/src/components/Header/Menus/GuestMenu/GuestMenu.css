@@ -1,0 +1,90 @@
+/* Guest Menu */
+.yt-guest-menu {
+  display: flex;
+  align-items: center;
+
+  gap: var(--space-2);
+
+  flex-shrink: 0;
+}
+
+/* Menu Wrapper */
+.yt-guest-menu-wrapper {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  flex-shrink: 0;
+}
+
+/* Dropdown */
+.yt-guest-dropdown {
+  width: 300px;
+}
+
+/* Sign In Button */
+.yt-signin-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: var(--space-2);
+
+  height: 36px;
+
+  padding: 0 var(--space-4);
+
+  box-sizing: border-box;
+
+  border: 1px solid var(--yt-border);
+  border-radius: var(--radius-full);
+
+  background: transparent;
+
+  color: var(--yt-blue);
+
+  font-size: var(--font-base);
+  font-weight: var(--font-weight-medium);
+
+  white-space: nowrap;
+
+  transition:
+    background-color var(--transition-fast),
+    border-color var(--transition-fast),
+    color var(--transition-fast);
+}
+
+.yt-signin-btn:hover {
+  background: rgba(6, 95, 212, 0.08);
+}
+
+.yt-signin-btn:focus-visible {
+  outline: 2px solid var(--yt-blue);
+
+  outline-offset: 2px;
+}
+
+.yt-signin-btn svg {
+  flex-shrink: 0;
+
+  font-size: var(--icon-size);
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .yt-guest-menu {
+    gap: 4px;
+  }
+
+  .yt-signin-btn {
+    padding: 0 12px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 380px) {
+  .yt-signin-btn {
+    padding: 0 10px;
+  }
+}

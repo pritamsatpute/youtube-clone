@@ -1,0 +1,540 @@
+/* Watch Skeleton */
+.yt-watch-skeleton {
+  width: 100%;
+
+  min-width: 0;
+
+  min-height: 100vh;
+
+  box-sizing: border-box;
+
+  padding: 24px;
+
+  background: var(--yt-bg);
+}
+
+
+/* Shimmer */
+.yt-watch-skeleton-shimmer {
+  width: 100%;
+  height: 100%;
+
+  border-radius: inherit;
+
+  background:
+    linear-gradient(
+      90deg,
+      var(--yt-hover) 25%,
+      var(--yt-hover-dark) 50%,
+      var(--yt-hover) 75%
+    );
+
+  background-size: 200% 100%;
+
+  animation:
+    yt-watch-skeleton-shimmer
+    1.5s ease-in-out infinite;
+}
+
+
+/* Shimmer Animation */
+@keyframes yt-watch-skeleton-shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+
+/* Layout */
+.yt-watch-skeleton-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    400px;
+
+  gap: 24px;
+
+  width: 100%;
+
+  max-width: 1800px;
+
+  margin: 0 auto;
+}
+
+
+/* Main */
+.yt-watch-skeleton-main {
+  min-width: 0;
+}
+
+
+/* Player */
+.yt-watch-skeleton-player {
+  width: 100%;
+
+  aspect-ratio: 16 / 9;
+
+  overflow: hidden;
+
+  border-radius: var(--radius-lg);
+
+  background: var(--yt-hover);
+}
+
+
+/* Title */
+.yt-watch-skeleton-title {
+  width: 94%;
+  height: 22px;
+
+  margin-top: 20px;
+
+  overflow: hidden;
+
+  border-radius: 5px;
+
+  background: var(--yt-hover);
+}
+
+
+/* Title Second */
+.yt-watch-skeleton-title.second {
+  width: 55%;
+
+  margin-top: 8px;
+}
+
+
+/* Video Meta */
+.yt-watch-skeleton-video-meta {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 16px;
+
+  margin-top: 16px;
+}
+
+
+/* Meta Text */
+.yt-watch-skeleton-meta-text {
+  width: 190px;
+  height: 15px;
+
+  overflow: hidden;
+
+  border-radius: 4px;
+
+  background: var(--yt-hover);
+}
+
+
+/* Actions */
+.yt-watch-skeleton-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+}
+
+
+/* Action */
+.yt-watch-skeleton-action {
+  width: 86px;
+  height: 38px;
+
+  overflow: hidden;
+
+  border-radius: 999px;
+
+  background: var(--yt-hover);
+}
+
+
+/* Channel */
+.yt-watch-skeleton-channel {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-top: 20px;
+
+  padding: 16px 0;
+
+  border-top: 1px solid var(--yt-border);
+
+  border-bottom: 1px solid var(--yt-border);
+}
+
+
+/* Channel Avatar */
+.yt-watch-skeleton-channel-avatar {
+  width: 44px;
+  height: 44px;
+
+  flex-shrink: 0;
+
+  overflow: hidden;
+
+  border-radius: 50%;
+
+  background: var(--yt-hover);
+}
+
+
+/* Channel Info */
+.yt-watch-skeleton-channel-info {
+  flex: 1;
+
+  min-width: 0;
+}
+
+
+/* Channel Name */
+.yt-watch-skeleton-channel-name {
+  width: 160px;
+  height: 16px;
+
+  overflow: hidden;
+
+  border-radius: 4px;
+
+  background: var(--yt-hover);
+}
+
+
+/* Subscribers */
+.yt-watch-skeleton-subscribers {
+  width: 110px;
+  height: 13px;
+
+  margin-top: 7px;
+
+  overflow: hidden;
+
+  border-radius: 4px;
+
+  background: var(--yt-hover);
+}
+
+
+/* Subscribe */
+.yt-watch-skeleton-subscribe {
+  width: 110px;
+  height: 38px;
+
+  flex-shrink: 0;
+
+  overflow: hidden;
+
+  border-radius: 999px;
+
+  background: var(--yt-hover);
+}
+
+
+/* Description */
+.yt-watch-skeleton-description {
+  margin-top: 16px;
+
+  padding: 16px;
+
+  border-radius: var(--radius-lg);
+
+  background: var(--yt-hover);
+}
+
+
+/* Description Line */
+.yt-watch-skeleton-description-line {
+  width: 100%;
+  height: 14px;
+
+  overflow: hidden;
+
+  border-radius: 4px;
+
+  background: var(--yt-hover-dark);
+}
+
+
+/* Description Gap */
+.yt-watch-skeleton-description-line
+  + .yt-watch-skeleton-description-line {
+  margin-top: 7px;
+}
+
+
+/* Description Medium */
+.yt-watch-skeleton-description-line.medium {
+  width: 65%;
+}
+
+
+/* Comments */
+.yt-watch-skeleton-comments {
+  margin-top: 28px;
+}
+
+
+/* Comments Title */
+.yt-watch-skeleton-comments-title {
+  width: 130px;
+  height: 20px;
+
+  margin-bottom: 24px;
+
+  overflow: hidden;
+
+  border-radius: 5px;
+
+  background: var(--yt-hover);
+}
+
+
+/* Comment */
+.yt-watch-skeleton-comment {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 14px;
+
+  margin-bottom: 24px;
+}
+
+
+/* Comment Avatar */
+.yt-watch-skeleton-comment-avatar {
+  width: 40px;
+  height: 40px;
+
+  flex-shrink: 0;
+
+  overflow: hidden;
+
+  border-radius: 50%;
+
+  background: var(--yt-hover);
+}
+
+
+/* Comment Body */
+.yt-watch-skeleton-comment-body {
+  flex: 1;
+
+  min-width: 0;
+}
+
+
+/* Comment Name */
+.yt-watch-skeleton-comment-name {
+  width: 110px;
+  height: 13px;
+
+  overflow: hidden;
+
+  border-radius: 4px;
+
+  background: var(--yt-hover);
+}
+
+
+/* Comment Line */
+.yt-watch-skeleton-comment-line {
+  width: 90%;
+  height: 14px;
+
+  margin-top: 8px;
+
+  overflow: hidden;
+
+  border-radius: 4px;
+
+  background: var(--yt-hover);
+}
+
+
+/* Comment Medium */
+.yt-watch-skeleton-comment-line.medium {
+  width: 60%;
+}
+
+
+/* Sidebar */
+.yt-watch-skeleton-sidebar {
+  min-width: 0;
+}
+
+
+/* Recommended */
+.yt-watch-skeleton-recommended {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 10px;
+
+  margin-bottom: 16px;
+}
+
+
+/* Recommended Thumbnail */
+.yt-watch-skeleton-recommended-thumbnail {
+  width: 168px;
+
+  flex-shrink: 0;
+
+  aspect-ratio: 16 / 9;
+
+  overflow: hidden;
+
+  border-radius: var(--radius-md);
+
+  background: var(--yt-hover);
+}
+
+
+/* Recommended Info */
+.yt-watch-skeleton-recommended-info {
+  flex: 1;
+
+  min-width: 0;
+}
+
+
+/* Recommended Title */
+.yt-watch-skeleton-recommended-title {
+  width: 100%;
+  height: 14px;
+
+  overflow: hidden;
+
+  border-radius: 4px;
+
+  background: var(--yt-hover);
+}
+
+
+/* Recommended Title Second */
+.yt-watch-skeleton-recommended-title.second {
+  width: 72%;
+
+  margin-top: 7px;
+}
+
+
+/* Recommended Meta */
+.yt-watch-skeleton-recommended-meta {
+  width: 85px;
+  height: 12px;
+
+  margin-top: 9px;
+
+  overflow: hidden;
+
+  border-radius: 4px;
+
+  background: var(--yt-hover);
+}
+
+
+/* Recommended Meta Short */
+.yt-watch-skeleton-recommended-meta.short {
+  width: 65px;
+
+  margin-top: 6px;
+}
+
+
+/* Tablet */
+@media (max-width: 1200px) {
+  .yt-watch-skeleton {
+    padding: 20px;
+  }
+
+  .yt-watch-skeleton-layout {
+    grid-template-columns: 1fr;
+
+    gap: 24px;
+  }
+
+  .yt-watch-skeleton-sidebar {
+    display: grid;
+
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 16px;
+  }
+
+  .yt-watch-skeleton-recommended {
+    margin-bottom: 0;
+  }
+
+  .yt-watch-skeleton-recommended-thumbnail {
+    width: 145px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .yt-watch-skeleton {
+    padding: 0;
+  }
+
+  .yt-watch-skeleton-player {
+    border-radius: 0;
+  }
+
+  .yt-watch-skeleton-title {
+    margin-inline: 12px;
+
+    margin-top: 16px;
+  }
+
+  .yt-watch-skeleton-video-meta {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    margin-inline: 12px;
+  }
+
+  .yt-watch-skeleton-actions {
+    width: 100%;
+
+    overflow: hidden;
+  }
+
+  .yt-watch-skeleton-channel,
+  .yt-watch-skeleton-description,
+  .yt-watch-skeleton-comments {
+    margin-inline: 12px;
+  }
+
+  .yt-watch-skeleton-sidebar {
+    display: block;
+
+    margin: 0 12px;
+  }
+
+  .yt-watch-skeleton-recommended {
+    margin-bottom: 16px;
+  }
+
+  .yt-watch-skeleton-recommended-thumbnail {
+    width: 42%;
+  }
+}

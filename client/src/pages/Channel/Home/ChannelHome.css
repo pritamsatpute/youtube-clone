@@ -1,0 +1,155 @@
+/* Home */
+.yt-channel-home {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: var(--space-8);
+
+  width: 100%;
+}
+
+/* Section */
+.yt-channel-section {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: var(--space-4);
+
+  width: 100%;
+}
+
+/* Section Title */
+.yt-channel-section-title {
+  margin: 0;
+
+  color: var(--yt-text-primary);
+
+  font-size: var(--font-xl);
+
+  font-weight: var(--font-weight-semibold);
+
+  line-height: 1.4;
+}
+
+/* Home Videos */
+.yt-channel-home-videos {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fill,
+      minmax(280px, 1fr)
+    );
+
+  gap: var(--space-6) var(--space-4);
+
+  width: 100%;
+}
+
+/* Loading / Error */
+.yt-channel-home-state {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-height: 180px;
+
+  color: var(--yt-text-secondary);
+
+  font-size: var(--font-sm);
+
+  text-align: center;
+}
+
+/* Error */
+.yt-channel-home-error {
+  color: var(--yt-text-secondary);
+}
+
+/* Empty */
+.yt-channel-home-empty {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-height: 260px;
+
+  padding: var(--space-8);
+
+  text-align: center;
+}
+
+/* Empty Title */
+.yt-channel-home-empty h2 {
+  margin: 0;
+
+  color: var(--yt-text-primary);
+
+  font-size: var(--font-lg);
+
+  font-weight: var(--font-weight-semibold);
+}
+
+/* Empty Description */
+.yt-channel-home-empty p {
+  margin: var(--space-2) 0 0;
+
+  color: var(--yt-text-secondary);
+
+  font-size: var(--font-sm);
+
+  line-height: 1.5;
+}
+
+/* Large Desktop */
+@media (min-width: 1400px) {
+  .yt-channel-home-videos {
+    grid-template-columns:
+      repeat(
+        auto-fill,
+        minmax(300px, 1fr)
+      );
+  }
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .yt-channel-home-videos {
+    grid-template-columns:
+      repeat(
+        auto-fill,
+        minmax(260px, 1fr)
+      );
+
+    gap: var(--space-5) var(--space-4);
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .yt-channel-home {
+    gap: var(--space-6);
+  }
+
+  .yt-channel-section {
+    gap: var(--space-3);
+  }
+
+  .yt-channel-section-title {
+    font-size: var(--font-lg);
+  }
+
+  .yt-channel-home-videos {
+    grid-template-columns: 1fr;
+
+    gap: var(--space-5);
+  }
+}

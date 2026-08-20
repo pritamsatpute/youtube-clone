@@ -1,0 +1,61 @@
+/* Channel Filter */
+.subscription-channel-filter {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  width: 100%;
+
+  overflow-x: auto;
+
+  padding: 4px 0 16px;
+
+  scrollbar-width: none;
+}
+
+/* Hide Scrollbar */
+.subscription-channel-filter::-webkit-scrollbar {
+  display: none;
+}
+
+/* Filter Button */
+.subscription-channel-filter button {
+  flex-shrink: 0;
+
+  height: 36px;
+
+  padding: 0 16px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: var(--yt-hover);
+
+  color: var(--yt-text-primary);
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  transition:
+    background-color var(--transition-fast);
+}
+
+/* Hover */
+.subscription-channel-filter button:hover {
+  background: var(--yt-hover-dark);
+}
+
+/* Active */
+.subscription-channel-filter button.active {
+  background: var(--yt-text-primary);
+
+  color: var(--yt-bg);
+}

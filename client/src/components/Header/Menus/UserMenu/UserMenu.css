@@ -1,0 +1,121 @@
+/* User Menu */
+.yt-user-menu {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  flex-shrink: 0;
+}
+
+/* Create Wrapper */
+.yt-create-wrapper {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  flex-shrink: 0;
+}
+
+/* Notification Wrapper */
+.yt-notification-wrapper {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  flex-shrink: 0;
+}
+
+/* Notification Badge */
+.yt-notification-badge {
+  position: absolute;
+
+  top: 4px;
+  right: 2px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 16px;
+  height: 16px;
+
+  padding: 0 4px;
+
+  box-sizing: border-box;
+
+  border-radius: 999px;
+
+  background: #cc0000;
+
+  color: #fff;
+
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1;
+
+  pointer-events: none;
+}
+
+/* Avatar Wrapper */
+.yt-avatar-wrapper {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  flex-shrink: 0;
+}
+
+/* Avatar Button */
+.yt-avatar-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+
+  padding: 4px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: transparent;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.15s ease;
+}
+
+.yt-avatar-btn:hover {
+  background: var(--yt-hover);
+}
+
+.yt-avatar-btn:focus-visible {
+  outline: 2px solid var(--yt-blue);
+
+  outline-offset: 2px;
+}
+
+/* Avatar */
+.yt-avatar {
+  display: block;
+
+  width: 32px;
+  height: 32px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .yt-user-menu {
+    gap: 4px;
+  }
+}

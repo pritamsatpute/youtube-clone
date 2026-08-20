@@ -1,0 +1,42 @@
+/* Video Details */
+.yt-watch-video-details {
+  display: flex;
+
+  flex-direction: column;
+
+  margin-top: 12px;
+
+  min-width: 0;
+}
+
+
+/* Title */
+.yt-watch-video-title {
+  margin: 0;
+
+  color: var(--yt-text-primary);
+
+  font-size: 20px;
+
+  font-weight: 700;
+
+  line-height: 28px;
+
+  letter-spacing: 0;
+
+  word-break: break-word;
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+  .yt-watch-video-details {
+    margin-top: 10px;
+  }
+
+  .yt-watch-video-title {
+    font-size: 18px;
+
+    line-height: 26px;
+  }
+}

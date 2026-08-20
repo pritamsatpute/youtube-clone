@@ -1,0 +1,16 @@
+export const mapChannel = (apiChannel) => ({
+    id: apiChannel._id,
+    name: apiChannel.channelName,
+    handle: apiChannel.handle,
+    avatar: apiChannel.avatar,
+    banner: apiChannel.banner,
+    description: apiChannel.description,
+    subscribers: `${apiChannel.subscribersCount} subscribers`,
+    videoCount: apiChannel.videosCount,
+    totalViews: apiChannel.totalViews,
+    joined: apiChannel.createdAt,
+    website: apiChannel.website || "",
+    email: apiChannel.businessEmail || "",
+    country: apiChannel.country || "",
+    links: apiChannel.links || [],
+});

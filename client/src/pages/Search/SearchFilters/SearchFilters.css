@@ -1,0 +1,95 @@
+/* Filters */
+.yt-search-filters {
+  margin-bottom: var(--space-5);
+}
+
+/* Toggle Button */
+.yt-search-filter-button {
+  display: inline-flex;
+  align-items: center;
+
+  gap: var(--space-2);
+
+  height: 36px;
+
+  padding: 0 var(--space-3);
+
+  border: none;
+
+  background: transparent;
+
+  color: var(--yt-text-primary);
+
+  font-size: var(--font-sm);
+
+  font-weight: var(--font-weight-medium);
+
+  cursor: pointer;
+}
+
+.yt-search-filter-button svg:last-child {
+  transition: transform var(--transition-fast);
+}
+
+.yt-search-filter-button svg.expanded {
+  transform: rotate(180deg);
+}
+
+/* Panel */
+.yt-search-filter-panel {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(180px, 1fr));
+
+  gap: var(--space-5);
+
+  margin-top: var(--space-5);
+
+  padding-top: var(--space-5);
+
+  border-top: 1px solid var(--yt-border);
+}
+
+/* Group */
+.yt-search-filter-group h3 {
+  margin-bottom: var(--space-3);
+
+  color: var(--yt-text-primary);
+
+  font-size: var(--font-base);
+
+  font-weight: var(--font-weight-semibold);
+}
+
+/* Options */
+.yt-search-filter-options {
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--space-2);
+}
+
+/* Chip */
+.yt-search-filter-chip {
+  display: inline-flex;
+  justify-content: flex-start;
+
+  padding: var(--space-2) 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: var(--yt-text-secondary);
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition: color var(--transition-fast);
+}
+
+.yt-search-filter-chip:hover {
+  color: var(--yt-text-primary);
+}

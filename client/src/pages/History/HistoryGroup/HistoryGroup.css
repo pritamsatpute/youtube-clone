@@ -1,0 +1,92 @@
+/* History Group */
+.yt-history-group {
+  display: flex;
+
+  flex-direction: column;
+
+  width: 100%;
+
+  min-width: 0;
+}
+
+/* Date */
+.yt-history-group-date {
+  display: flex;
+
+  align-items: center;
+
+  min-height: 32px;
+
+  margin-bottom: 16px;
+}
+
+/* Date Title */
+.yt-history-group-title {
+  margin: 0;
+
+  color: var(--yt-text-primary);
+
+  font-size: 16px;
+
+  font-weight: 500;
+
+  line-height: 1.4;
+}
+
+/* Videos */
+.yt-history-group-videos {
+  display: flex;
+
+  flex-direction: column;
+
+  width: 100%;
+
+  min-width: 0;
+
+  gap: 16px;
+}
+
+/* Video Row */
+.yt-history-group-videos > * {
+  width: 100%;
+
+  min-width: 0;
+}
+
+/* Hover Separation */
+.yt-history-group-videos
+  > * + * {
+  margin-top: 0;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .yt-history-group-date {
+    margin-bottom: 14px;
+  }
+
+  .yt-history-group-title {
+    font-size: 15px;
+  }
+
+  .yt-history-group-videos {
+    gap: 14px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .yt-history-group-date {
+    min-height: 28px;
+
+    margin-bottom: 12px;
+  }
+
+  .yt-history-group-title {
+    font-size: 14px;
+  }
+
+  .yt-history-group-videos {
+    gap: 12px;
+  }
+}

@@ -1,0 +1,456 @@
+/* Overlay */
+.yt-edit-video-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 24px;
+
+  background: rgba(15, 15, 15, 0.72);
+
+  backdrop-filter: blur(2px);
+
+  z-index: 9999;
+}
+
+/* Modal */
+.yt-edit-video-modal {
+  display: flex;
+
+  flex-direction: column;
+
+  width: 925px;
+
+  max-width: 100%;
+
+  height: min(760px, 90vh);
+
+  overflow: hidden;
+
+  border-radius: 12px;
+
+  background: var(--yt-surface);
+
+  color: var(--yt-text-primary);
+
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.35);
+
+  animation: editVideoOpen 0.18s ease;
+}
+
+/* Header */
+.yt-edit-video-header {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  flex-shrink: 0;
+
+  height: 64px;
+
+  padding: 0 24px;
+
+  border-bottom: 1px solid var(--yt-divider);
+}
+
+.yt-edit-video-header h2 {
+  margin: 0;
+
+  font-size: 20px;
+
+  font-weight: 600;
+
+  color: var(--yt-text-primary);
+}
+
+/* Close */
+.yt-edit-video-close {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+
+  padding: 0;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: transparent;
+
+  color: var(--yt-text-primary);
+
+  font-size: 28px;
+
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+.yt-edit-video-close:hover {
+  background: var(--yt-hover);
+}
+
+.yt-edit-video-close:disabled {
+  opacity: 0.5;
+
+  cursor: default;
+}
+
+/* Content */
+.yt-edit-video-content {
+  display: grid;
+
+  grid-template-columns:
+    260px minmax(0, 1fr);
+
+  gap: 32px;
+
+  flex: 1;
+
+  min-height: 0;
+
+  padding: 24px;
+
+  overflow-y: auto;
+
+  scrollbar-width: none;
+
+  -ms-overflow-style: none;
+}
+
+/* Hide Scrollbar */
+.yt-edit-video-content::-webkit-scrollbar {
+  display: none;
+}
+
+/* Current Thumbnail */
+.yt-edit-video-thumbnail {
+  position: sticky;
+
+  top: 0;
+
+  width: 100%;
+
+  aspect-ratio: 16 / 9;
+
+  overflow: hidden;
+
+  align-self: start;
+
+  border-radius: 8px;
+
+  background: var(--yt-hover);
+}
+
+.yt-edit-video-thumbnail img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+/* Form */
+.yt-edit-video-form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 28px;
+
+  min-width: 0;
+}
+
+/* Input Group */
+.yt-edit-input-group {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.yt-edit-input-group label {
+  color: var(--yt-text-secondary);
+
+  font-size: 13px;
+
+  font-weight: 500;
+}
+
+.yt-edit-input-group textarea {
+  width: 100%;
+
+  padding: 14px 16px;
+
+  border: 1px solid var(--yt-divider);
+
+  border-radius: 8px;
+
+  outline: none;
+
+  background: var(--yt-surface);
+
+  color: var(--yt-text-primary);
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+
+  resize: vertical;
+
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.yt-edit-input-group textarea:hover {
+  border-color: var(--yt-text-secondary);
+}
+
+.yt-edit-input-group textarea:focus {
+  border-color: var(--yt-text-primary);
+
+  box-shadow:
+    0 0 0 1px
+    var(--yt-text-primary);
+}
+
+.yt-edit-input-group span {
+  align-self: flex-end;
+
+  color: var(--yt-text-secondary);
+
+  font-size: 12px;
+}
+
+/* Cards */
+.yt-edit-card {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 14px;
+
+  padding: 18px;
+
+  border: 1px solid var(--yt-divider);
+
+  border-radius: 10px;
+
+  background: var(--yt-surface);
+}
+
+.yt-edit-card h3 {
+  margin: 0;
+
+  color: var(--yt-text-primary);
+
+  font-size: 15px;
+
+  font-weight: 500;
+}
+
+/* Radio */
+.yt-edit-card label {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: var(--yt-text-primary);
+
+  font-size: 14px;
+
+  cursor: pointer;
+}
+
+.yt-edit-card input[type="radio"] {
+  width: 18px;
+
+  height: 18px;
+
+  margin: 0;
+}
+
+/* Select */
+.yt-edit-card select {
+  width: 100%;
+
+  height: 42px;
+
+  padding: 0 14px;
+
+  border: 1px solid var(--yt-divider);
+
+  border-radius: 8px;
+
+  outline: none;
+
+  background: var(--yt-surface);
+
+  color: var(--yt-text-primary);
+
+  font-size: 14px;
+
+  cursor: pointer;
+}
+
+.yt-edit-card select:hover {
+  border-color: var(--yt-text-secondary);
+}
+
+.yt-edit-card select:focus {
+  border-color: var(--yt-text-primary);
+}
+
+/* Footer */
+.yt-edit-video-footer {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-end;
+
+  flex-shrink: 0;
+
+  gap: 12px;
+
+  min-height: 68px;
+
+  padding: 16px 24px;
+
+  border-top: 1px solid var(--yt-divider);
+
+  background: var(--yt-surface);
+}
+
+/* Buttons */
+.yt-edit-video-cancel,
+.yt-edit-video-save {
+  height: 36px;
+
+  padding: 0 18px;
+
+  border-radius: 18px;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.15s ease,
+    opacity 0.15s ease;
+}
+
+/* Cancel */
+.yt-edit-video-cancel {
+  border: none;
+
+  background: var(--yt-hover);
+
+  color: var(--yt-text-primary);
+}
+
+.yt-edit-video-cancel:hover:not(:disabled) {
+  background: var(--yt-hover-dark);
+}
+
+/* Save */
+.yt-edit-video-save {
+  border: none;
+
+  background: var(--yt-text-primary);
+
+  color: var(--yt-bg);
+}
+
+.yt-edit-video-save:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+/* Disabled */
+.yt-edit-video-cancel:disabled,
+.yt-edit-video-save:disabled {
+  opacity: 0.45;
+
+  cursor: not-allowed;
+}
+
+/* Animation */
+@keyframes editVideoOpen {
+  from {
+    opacity: 0;
+
+    transform: scale(0.97);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: scale(1);
+  }
+}
+
+/* Tablet */
+@media (max-width: 700px) {
+  .yt-edit-video-overlay {
+    padding: 0;
+  }
+
+  .yt-edit-video-modal {
+    width: 100%;
+
+    height: 100vh;
+
+    max-height: 100vh;
+
+    border-radius: 0;
+  }
+
+  .yt-edit-video-content {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+  .yt-edit-video-thumbnail {
+    position: static;
+
+    max-width: 360px;
+
+    margin: 0 auto;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .yt-edit-video-header {
+    padding: 0 16px;
+  }
+
+  .yt-edit-video-content {
+    padding: 16px;
+  }
+
+  .yt-edit-video-footer {
+    padding: 14px 16px;
+  }
+}

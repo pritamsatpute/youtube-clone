@@ -1,0 +1,70 @@
+/* Subscription */
+.yt-sidebar-subscription {
+  display: flex;
+  align-items: center;
+
+  gap: 16px;
+
+  height: 40px;
+
+  margin: 0 12px;
+
+  padding: 0 16px;
+
+  border-radius: 10px;
+
+  color: inherit;
+
+  text-decoration: none;
+
+  transition: background-color var(--transition-fast);
+}
+
+.yt-sidebar-subscription:hover {
+  background: var(--yt-hover);
+}
+
+/* Avatar */
+.yt-sidebar-subscription-avatar {
+  width: 24px;
+  height: 24px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+  flex-shrink: 0;
+}
+
+/* Name */
+.yt-sidebar-subscription-name {
+  flex: 1;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+
+  font-size: 14px;
+
+  color: var(--yt-text-primary);
+}
+
+/* New Video Dot */
+.yt-sidebar-subscription-dot {
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: var(--yt-blue);
+
+  flex-shrink: 0;
+}
+
+.yt-sidebar-subscriptions-empty {
+  display: flex;
+  align-items: center;
+  padding: 8px 24px;
+}

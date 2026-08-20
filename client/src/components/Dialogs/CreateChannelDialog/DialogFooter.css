@@ -1,0 +1,61 @@
+/* Footer */
+.yt-dialog-footer {
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 12px;
+
+  margin-top: 32px;
+}
+
+/* Buttons */
+.yt-dialog-footer button {
+  height: 36px;
+
+  padding: 0 18px;
+
+  border: none;
+
+  border-radius: 999px;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: .15s;
+}
+
+/* Cancel */
+.yt-dialog-cancel {
+  background: transparent;
+
+  color: var(--yt-text-primary);
+}
+
+.yt-dialog-cancel:hover {
+  background: var(--yt-hover);
+}
+
+/* Create */
+.yt-dialog-create {
+  background: transparent;
+
+  color: #3ea6ff; 
+}
+
+.yt-dialog-create:hover {
+  background: var(--yt-hover);
+}
+
+.yt-dialog-create:disabled {
+  background: transparent;
+
+  color: var(--yt-text-secondary);
+
+  cursor: not-allowed;
+
+  opacity: 1;
+}

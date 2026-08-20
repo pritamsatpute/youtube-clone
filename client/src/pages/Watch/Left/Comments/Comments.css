@@ -1,0 +1,19 @@
+/* Comments */
+.yt-comments {
+  margin-top: 32px;
+}
+
+/* List */
+.yt-comments-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 24px;
+}
+
+/* Loading */
+.yt-comments,
+.yt-comments-list {
+  color: var(--yt-text-primary);
+}

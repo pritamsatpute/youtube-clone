@@ -1,0 +1,864 @@
+/* Overlay */
+.yt-manage-videos-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 24px;
+
+  background: rgba(0, 0, 0, 0.65);
+
+  z-index: 10000;
+}
+
+/* Modal */
+.yt-manage-videos-modal {
+  display: flex;
+
+  flex-direction: column;
+
+  width: min(1100px, 100%);
+
+  max-height: min(760px, calc(100vh - 48px));
+
+  overflow: hidden;
+
+  border-radius: 12px;
+
+  background: var(--yt-bg);
+
+  color: var(--yt-text-primary);
+
+  box-shadow:
+    0 16px 48px rgba(0, 0, 0, 0.35);
+
+  animation:
+    manageVideosOpen 0.18s ease;
+}
+
+/* Header */
+.yt-manage-videos-header {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  min-height: 72px;
+
+  padding: 0 24px;
+
+  border-bottom:
+    1px solid var(--yt-divider);
+}
+
+/* Header Title */
+.yt-manage-videos-header h2 {
+  margin: 0;
+
+  font-size: 20px;
+
+  font-weight: 600;
+}
+
+/* Header Description */
+.yt-manage-videos-header p {
+  margin: 4px 0 0;
+
+  color: var(--yt-text-secondary);
+
+  font-size: 13px;
+}
+
+/* Close */
+.yt-manage-videos-close {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 40px;
+
+  height: 40px;
+
+  padding: 0;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: transparent;
+
+  color: var(--yt-text-primary);
+
+  cursor: pointer;
+
+  transition:
+    background 0.15s ease;
+}
+
+.yt-manage-videos-close:hover {
+  background: var(--yt-hover);
+}
+
+.yt-manage-videos-close svg {
+  font-size: 22px;
+}
+
+/* Toolbar */
+.yt-manage-videos-toolbar {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 16px;
+
+  padding: 16px 24px;
+
+  border-bottom:
+    1px solid var(--yt-divider);
+}
+
+/* Search */
+.yt-manage-videos-search {
+  display: flex;
+
+  align-items: center;
+
+  width: min(420px, 100%);
+
+  height: 40px;
+
+  padding: 0 12px;
+
+  border:
+    1px solid var(--yt-divider);
+
+  border-radius: 8px;
+
+  background: var(--yt-bg);
+
+  transition:
+    border-color 0.15s ease;
+}
+
+.yt-manage-videos-search:focus-within {
+  border-color:
+    var(--yt-text-secondary);
+}
+
+/* Search Icon */
+.yt-manage-videos-search svg {
+  flex-shrink: 0;
+
+  color: var(--yt-text-secondary);
+
+  font-size: 20px;
+}
+
+/* Search Input */
+.yt-manage-videos-search input {
+  width: 100%;
+
+  height: 100%;
+
+  padding: 0 10px;
+
+  border: none;
+
+  outline: none;
+
+  background: transparent;
+
+  color: var(--yt-text-primary);
+
+  font-family: inherit;
+
+  font-size: 14px;
+}
+
+.yt-manage-videos-search input::placeholder {
+  color:
+    var(--yt-text-secondary);
+}
+
+/* Count */
+.yt-manage-videos-count {
+  flex-shrink: 0;
+
+  color: var(--yt-text-secondary);
+
+  font-size: 13px;
+}
+
+/* Content */
+.yt-manage-videos-content {
+  flex: 1;
+
+  min-height: 0;
+
+  overflow-y: auto;
+
+  scrollbar-width: none;
+
+  -ms-overflow-style: none;
+}
+
+/* Hide Scrollbar */
+.yt-manage-videos-content::-webkit-scrollbar {
+  display: none;
+}
+
+/* Video List */
+.yt-manage-video-list {
+  width: 100%;
+}
+
+/* Video Row */
+.yt-manage-video-row {
+  display: grid;
+
+  grid-template-columns:
+    180px
+    minmax(0, 1fr)
+    120px
+    auto;
+
+  align-items: center;
+
+  gap: 20px;
+
+  min-height: 112px;
+
+  padding: 16px 24px;
+
+  border-bottom:
+    1px solid var(--yt-divider);
+
+  transition:
+    background 0.15s ease;
+}
+
+.yt-manage-video-row:hover {
+  background:
+    var(--yt-hover);
+}
+
+/* Thumbnail */
+.yt-manage-video-thumbnail {
+  position: relative;
+
+  width: 180px;
+
+  aspect-ratio: 16 / 9;
+
+  overflow: hidden;
+
+  border-radius: 6px;
+
+  background:
+    var(--yt-hover-dark);
+}
+
+.yt-manage-video-thumbnail img {
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+}
+
+/* Duration */
+.yt-manage-video-thumbnail span {
+  position: absolute;
+
+  right: 5px;
+
+  bottom: 5px;
+
+  padding: 2px 4px;
+
+  border-radius: 3px;
+
+  background: rgba(0, 0, 0, 0.8);
+
+  color: #fff;
+
+  font-size: 11px;
+
+  line-height: 1.2;
+}
+
+/* Video Info */
+.yt-manage-video-info {
+  min-width: 0;
+}
+
+/* Video Title */
+.yt-manage-video-info h3 {
+  display: -webkit-box;
+
+  margin: 0;
+
+  overflow: hidden;
+
+  color: var(--yt-text-primary);
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  line-height: 1.45;
+
+  -webkit-box-orient: vertical;
+
+  line-clamp: 2;
+
+  -webkit-line-clamp: 2;
+}
+
+/* Video Stats */
+.yt-manage-video-info p {
+  margin: 7px 0 0;
+
+  color: var(--yt-text-secondary);
+
+  font-size: 12px;
+}
+
+/* Visibility */
+.yt-manage-video-visibility {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+
+  min-width: 0;
+}
+
+.yt-manage-video-visibility span {
+  color: var(--yt-text-secondary);
+
+  font-size: 11px;
+}
+
+.yt-manage-video-visibility strong {
+  overflow: hidden;
+
+  color: var(--yt-text-primary);
+
+  font-size: 13px;
+
+  font-weight: 500;
+
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+
+  text-transform: capitalize;
+}
+
+/* Actions */
+.yt-manage-video-actions {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-end;
+
+  gap: 4px;
+}
+
+/* Direct Action Button */
+.yt-manage-video-actions > button {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-width: 64px;
+
+  height: 36px;
+
+  padding: 0 12px;
+
+  border: none;
+
+  border-radius: 18px;
+
+  background: transparent;
+
+  color: var(--yt-text-primary);
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition:
+    background 0.15s ease;
+}
+
+/* Direct Action Button Hover */
+.yt-manage-video-actions > button:hover {
+  background:
+    var(--yt-hover);
+}
+
+/* More Button Wrapper */
+.yt-manage-video-menu-wrapper {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+}
+
+/* More Button */
+.yt-manage-video-more {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 40px;
+
+  min-width: 40px;
+
+  height: 40px;
+
+  margin: 0;
+
+  padding: 0;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: transparent;
+
+  color: var(--yt-text-primary);
+
+  cursor: pointer;
+
+  transition:
+    background 0.15s ease;
+}
+
+/* More Button Hover */
+.yt-manage-video-more:hover {
+  background:
+    var(--yt-hover);
+}
+
+/* More Button Active */
+.yt-manage-video-more[aria-expanded="true"] {
+  background:
+    var(--yt-hover);
+}
+
+/* More Icon */
+.yt-manage-video-more svg {
+  width: 22px;
+
+  height: 22px;
+
+  font-size: 22px;
+}
+
+/* State */
+.yt-manage-videos-state {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-height: 300px;
+
+  padding: 32px;
+
+  text-align: center;
+}
+
+/* State Title */
+.yt-manage-videos-state h3 {
+  margin: 0;
+
+  color: var(--yt-text-primary);
+
+  font-size: 16px;
+
+  font-weight: 500;
+}
+
+/* State Description */
+.yt-manage-videos-state p {
+  margin: 8px 0 0;
+
+  color: var(--yt-text-secondary);
+
+  font-size: 13px;
+}
+
+/* Error */
+.yt-manage-videos-error {
+  color: var(--yt-text-secondary);
+}
+
+/* Delete Overlay */
+.yt-delete-video-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 24px;
+
+  background: rgba(0, 0, 0, 0.55);
+
+  z-index: 11000;
+}
+
+/* Delete Modal */
+.yt-delete-video-modal {
+  width: min(440px, 100%);
+
+  padding: 24px;
+
+  border-radius: 12px;
+
+  background: var(--yt-bg);
+
+  box-shadow:
+    0 16px 48px rgba(0, 0, 0, 0.4);
+
+  animation:
+    manageVideosOpen 0.15s ease;
+}
+
+/* Delete Title */
+.yt-delete-video-modal h2 {
+  margin: 0;
+
+  color: var(--yt-text-primary);
+
+  font-size: 20px;
+
+  font-weight: 600;
+}
+
+/* Delete Description */
+.yt-delete-video-modal p {
+  margin: 12px 0 0;
+
+  color: var(--yt-text-secondary);
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+.yt-delete-video-modal p strong {
+  color: var(--yt-text-primary);
+}
+
+/* Delete Actions */
+.yt-delete-video-actions {
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 10px;
+
+  margin-top: 24px;
+}
+
+/* Delete Action Buttons */
+.yt-delete-video-actions button {
+  height: 36px;
+
+  padding: 0 18px;
+
+  border: none;
+
+  border-radius: 18px;
+
+  background: var(--yt-hover);
+
+  color: var(--yt-text-primary);
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  font-weight: 500;
+
+  cursor: pointer;
+}
+
+.yt-delete-video-actions button:hover:not(:disabled) {
+  background:
+    var(--yt-hover-dark);
+}
+
+/* Delete Danger */
+.yt-delete-video-actions button.danger {
+  background: #cc0000;
+
+  color: #fff;
+}
+
+.yt-delete-video-actions button.danger:hover:not(:disabled) {
+  background: #b00000;
+}
+
+/* Disabled */
+.yt-delete-video-actions button:disabled {
+  opacity: 0.5;
+
+  cursor: not-allowed;
+}
+
+/* Menu */
+.yt-manage-video-menu {
+  position: absolute;
+
+  top: calc(100% + 6px);
+
+  right: 0;
+
+  z-index: 50;
+
+  width: 160px;
+
+  padding: 6px 0;
+
+  overflow: hidden;
+
+  border:
+    1px solid var(--yt-divider);
+
+  border-radius: 8px;
+
+  background: var(--yt-bg);
+
+  box-shadow:
+    0 4px 16px rgba(0, 0, 0, 0.25);
+
+  animation:
+    manageVideoMenuOpen 0.12s ease;
+}
+
+/* Menu Item */
+.yt-manage-video-menu button {
+  display: flex;
+
+  align-items: center;
+
+  width: 100%;
+
+  height: 40px;
+
+  margin: 0;
+
+  padding: 0 14px;
+
+  border: none;
+
+  border-radius: 0;
+
+  background: transparent;
+
+  color: var(--yt-text-primary);
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  font-weight: 400;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition:
+    background 0.12s ease;
+}
+
+/* Menu Item Hover */
+.yt-manage-video-menu button:hover {
+  background:
+    var(--yt-hover);
+}
+
+/* Delete Menu Item */
+.yt-manage-video-menu button.danger {
+  color: #cc0000;
+}
+
+/* Delete Menu Item Hover */
+.yt-manage-video-menu button.danger:hover {
+  background:
+    var(--yt-hover);
+}
+
+/* Animation */
+@keyframes manageVideosOpen {
+  from {
+    opacity: 0;
+
+    transform: scale(0.97);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: scale(1);
+  }
+}
+
+/* Menu Animation */
+@keyframes manageVideoMenuOpen {
+  from {
+    opacity: 0;
+
+    transform: translateY(-4px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+/* Tablet */
+@media (max-width: 850px) {
+  .yt-manage-videos-overlay {
+    padding: 16px;
+  }
+
+  .yt-manage-videos-modal {
+    max-height:
+      calc(100vh - 32px);
+  }
+
+  .yt-manage-video-row {
+    grid-template-columns:
+      150px
+      minmax(0, 1fr)
+      auto;
+
+    gap: 16px;
+  }
+
+  .yt-manage-video-thumbnail {
+    width: 150px;
+  }
+
+  .yt-manage-video-visibility {
+    display: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .yt-manage-videos-overlay {
+    align-items: flex-end;
+
+    padding: 0;
+  }
+
+  .yt-manage-videos-modal {
+    width: 100%;
+
+    max-height: 92vh;
+
+    border-radius:
+      12px 12px 0 0;
+  }
+
+  .yt-manage-videos-header {
+    min-height: 64px;
+
+    padding: 0 16px;
+  }
+
+  .yt-manage-videos-toolbar {
+    align-items: stretch;
+
+    flex-direction: column;
+
+    padding: 12px 16px;
+  }
+
+  .yt-manage-videos-search {
+    width: 100%;
+  }
+
+  .yt-manage-video-row {
+    grid-template-columns:
+      120px
+      minmax(0, 1fr);
+
+    gap: 12px;
+
+    padding: 12px 16px;
+  }
+
+  .yt-manage-video-thumbnail {
+    width: 120px;
+  }
+
+  .yt-manage-video-actions {
+    grid-column: 2;
+
+    justify-content: flex-start;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 420px) {
+  .yt-manage-video-row {
+    grid-template-columns:
+      105px
+      minmax(0, 1fr);
+  }
+
+  .yt-manage-video-thumbnail {
+    width: 105px;
+  }
+
+  .yt-manage-video-info h3 {
+    font-size: 13px;
+  }
+
+  .yt-manage-video-info p {
+    font-size: 11px;
+  }
+}

@@ -1,0 +1,168 @@
+/* Volume */
+.yt-volume-control {
+  display: flex;
+
+  align-items: center;
+
+  gap: 0;
+
+  height: 40px;
+}
+
+
+/* Button */
+.yt-volume-button {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+
+  flex-shrink: 0;
+
+  padding: 0;
+
+  border: none;
+  border-radius: 50%;
+
+  background: transparent;
+
+  color: #fff;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.15s ease;
+}
+
+
+/* Button Hover */
+.yt-volume-button:hover {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.12
+  );
+}
+
+
+/* Icon */
+.yt-volume-button svg {
+  font-size: 25px;
+}
+
+
+/* Slider Wrapper */
+.yt-volume-slider-wrapper {
+  width: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  overflow: hidden;
+
+  opacity: 0;
+
+  transition:
+    width 0.2s ease,
+    opacity 0.2s ease;
+}
+
+
+/* Expand */
+.yt-volume-control:hover
+  .yt-volume-slider-wrapper,
+.yt-volume-control:focus-within
+  .yt-volume-slider-wrapper {
+  width: 72px;
+
+  opacity: 1;
+}
+
+
+/* Slider */
+.yt-volume-slider {
+  width: 64px;
+  height: 4px;
+
+  margin: 0 6px;
+
+  appearance: none;
+
+  border-radius: 999px;
+
+  outline: none;
+
+  cursor: pointer;
+
+  background:
+    linear-gradient(
+      to right,
+      #fff 0,
+      #fff var(--volume-level),
+      rgba(
+        255,
+        255,
+        255,
+        0.35
+      ) var(--volume-level),
+      rgba(
+        255,
+        255,
+        255,
+        0.35
+      ) 100%
+    );
+}
+
+
+/* WebKit Thumb */
+.yt-volume-slider::-webkit-slider-thumb {
+  width: 12px;
+  height: 12px;
+
+  appearance: none;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #fff;
+
+  cursor: pointer;
+}
+
+
+/* Firefox Thumb */
+.yt-volume-slider::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #fff;
+
+  cursor: pointer;
+}
+
+
+/* Focus */
+.yt-volume-slider:focus-visible {
+  outline: 2px solid #fff;
+
+  outline-offset: 3px;
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+  .yt-volume-slider-wrapper {
+    display: none;
+  }
+}

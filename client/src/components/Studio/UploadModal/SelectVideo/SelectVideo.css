@@ -1,0 +1,97 @@
+/* Container */
+.yt-select-video {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  height: 100%;
+
+  padding: 48px;
+
+  text-align: center;
+}
+
+/* Dragging */
+.yt-select-video.dragging {
+  background: rgba(
+    62,
+    166,
+    255,
+    .06
+  );
+}
+
+/* Circle */
+.yt-upload-icon {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  width: 140px;
+
+  height: 140px;
+
+  border-radius: 50%;
+
+  background: var(--yt-hover-dark);
+
+  margin-bottom: 36px;
+}
+
+.yt-upload-icon svg {
+  font-size: 72px;
+
+  color: var(--yt-text-secondary);
+}
+
+/* Heading */
+.yt-select-video h3 {
+  margin: 0;
+
+  font-size: 16px;
+
+  font-weight: 400;
+
+  margin-block-end: 23px;
+
+  color: var(--yt-text-primary);
+}
+
+/* Select Files Button */
+.yt-select-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 94px;
+  height: 40px;
+  padding: 0 16px;
+
+  border: none;
+  border-radius: 20px;
+
+  background: #f1f1f1;
+  color: #0f0f0f;
+
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+
+  cursor: pointer;
+
+  transition: background-color .15s ease;
+}
+
+.yt-select-btn:hover {
+  background: #e5e5e5;
+}
+
+.yt-select-btn:active {
+  background: #dcdcdc;
+}

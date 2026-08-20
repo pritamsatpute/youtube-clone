@@ -1,0 +1,241 @@
+/* Switch Account */
+.yt-switch-account {
+  width: 320px;
+
+  color: var(--yt-text-primary);
+}
+
+
+/* Header */
+.yt-switch-header {
+  display: flex;
+
+  align-items: center;
+
+  gap: var(--space-3);
+
+  height: 56px;
+
+  padding: 0 var(--space-4);
+
+  border-bottom: 1px solid var(--yt-border);
+}
+
+
+/* Back */
+.yt-switch-back {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 36px;
+  height: 36px;
+
+  padding: 0;
+
+  border: none;
+
+  border-radius: var(--radius-full);
+
+  background: transparent;
+
+  color: var(--yt-text-primary);
+
+  cursor: pointer;
+}
+
+
+/* Back Hover */
+.yt-switch-back:hover {
+  background: var(--yt-hover);
+}
+
+
+/* Title */
+.yt-switch-header h3 {
+  margin: 0;
+
+  font-size: 16px;
+
+  font-weight: var(--font-weight-medium);
+}
+
+
+/* List */
+.yt-switch-list {
+  display: flex;
+
+  flex-direction: column;
+
+  padding: 8px 0;
+}
+
+
+/* Account */
+.yt-switch-account-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: var(--space-3);
+
+  width: 100%;
+
+  min-height: 64px;
+
+  padding: 8px 20px;
+
+  border: none;
+
+  background: transparent;
+
+  color: var(--yt-text-primary);
+
+  text-align: left;
+
+  cursor: pointer;
+}
+
+
+/* Account Hover */
+.yt-switch-account-item:hover:not(:disabled) {
+  background: var(--yt-hover-dark);
+}
+
+
+/* Current Account */
+.yt-switch-account-item.active {
+  cursor: default;
+}
+
+
+/* Avatar */
+.yt-switch-avatar {
+  width: 40px;
+  height: 40px;
+
+  flex-shrink: 0;
+
+  border-radius: var(--radius-full);
+
+  object-fit: cover;
+
+  background: var(--yt-hover);
+}
+
+
+/* Info */
+.yt-switch-info {
+  display: flex;
+
+  flex-direction: column;
+
+  flex: 1;
+
+  min-width: 0;
+}
+
+
+/* Name */
+.yt-switch-info strong {
+  overflow: hidden;
+
+  color: var(--yt-text-primary);
+
+  font-size: 14px;
+
+  font-weight: var(--font-weight-medium);
+
+  line-height: 1.4;
+
+  white-space: nowrap;
+
+  text-overflow: ellipsis;
+}
+
+
+/* Secondary */
+.yt-switch-info span {
+  margin-top: 2px;
+
+  overflow: hidden;
+
+  color: var(--yt-text-secondary);
+
+  font-size: 13px;
+
+  line-height: 1.4;
+
+  white-space: nowrap;
+
+  text-overflow: ellipsis;
+}
+
+
+/* Check */
+.yt-switch-check {
+  flex-shrink: 0;
+
+  font-size: 20px !important;
+
+  color: var(--yt-text-primary);
+}
+
+
+/* Add Account */
+.yt-add-account {
+  display: flex;
+
+  align-items: center;
+
+  gap: var(--space-3);
+
+  width: 100%;
+
+  min-height: 56px;
+
+  padding: 8px 20px;
+
+  border: none;
+
+  background: transparent;
+
+  color: var(--yt-text-primary);
+
+  font-size: 14px;
+
+  font-weight: var(--font-weight-medium);
+
+  text-align: left;
+
+  cursor: pointer;
+}
+
+
+/* Add Account Hover */
+.yt-add-account:hover {
+  background: var(--yt-hover);
+}
+
+
+/* Add Icon */
+.yt-add-account-icon {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+
+  flex-shrink: 0;
+
+  border-radius: var(--radius-full);
+
+  background: var(--yt-hover);
+
+  color: var(--yt-text-primary);
+}

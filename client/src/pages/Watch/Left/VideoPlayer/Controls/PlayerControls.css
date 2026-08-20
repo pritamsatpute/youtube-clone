@@ -1,0 +1,300 @@
+/* Controls */
+.yt-player-controls {
+  position: absolute;
+
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  z-index: 10;
+
+  padding: 0 12px 8px;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.85),
+      rgba(0, 0, 0, 0.55) 45%,
+      transparent
+    );
+
+  color: #fff;
+
+  opacity: 1;
+
+  transition:
+    opacity 0.2s ease;
+}
+
+
+/* Controls Visible */
+.yt-player-controls--visible {
+  opacity: 1;
+
+  pointer-events: auto;
+}
+
+
+/* Controls Hidden */
+.yt-player-controls--hidden {
+  opacity: 0;
+
+  pointer-events: none;
+}
+
+
+/* Controls Row */
+.yt-player-controls-row {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  min-height: 40px;
+}
+
+
+/* Left */
+.yt-player-controls-left,
+.yt-player-controls-right {
+  display: flex;
+
+  align-items: center;
+}
+
+
+/* Right */
+.yt-player-controls-right {
+  gap: 4px;
+}
+
+
+/* Control Button */
+.yt-player-control-button {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 40px;
+
+  height: 40px;
+
+  padding: 0;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: transparent;
+
+  color: #fff;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.15s ease;
+}
+
+
+/* Control Button Hover */
+.yt-player-control-button:hover {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.12
+  );
+}
+
+
+/* Control Icon */
+.yt-player-control-button svg {
+  font-size: 26px;
+}
+
+
+/* Volume */
+.yt-player-volume {
+  display: flex;
+
+  align-items: center;
+}
+
+
+/* Volume Slider */
+.yt-player-volume-slider {
+  width: 0;
+
+  overflow: hidden;
+
+  transition:
+    width 0.2s ease;
+}
+
+
+/* Show Volume Slider */
+.yt-player-volume:hover
+.yt-player-volume-slider {
+  width: 72px;
+}
+
+
+/* Volume Input */
+.yt-player-volume-slider input {
+  width: 68px;
+
+  height: 4px;
+
+  appearance: none;
+
+  border-radius: 999px;
+
+  outline: none;
+
+  cursor: pointer;
+
+  background:
+    linear-gradient(
+      to right,
+      #fff
+        var(--yt-volume),
+      rgba(
+        255,
+        255,
+        255,
+        0.35
+      )
+        var(--yt-volume)
+    );
+}
+
+
+/* Volume Thumb */
+.yt-player-volume-slider
+input::-webkit-slider-thumb {
+  width: 10px;
+
+  height: 10px;
+
+  appearance: none;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #fff;
+
+  cursor: pointer;
+}
+
+
+/* Firefox Volume Thumb */
+.yt-player-volume-slider
+input::-moz-range-thumb {
+  width: 10px;
+
+  height: 10px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #fff;
+
+  cursor: pointer;
+}
+
+
+/* Time */
+.yt-player-time {
+  margin-left: 8px;
+
+  color: #fff;
+
+  font-size: 13px;
+
+  font-weight: 400;
+
+  line-height: 1;
+
+  white-space: nowrap;
+}
+
+
+/* Settings Wrapper */
+.yt-player-settings-wrapper {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+}
+
+
+/* Settings Position */
+.yt-player-settings-wrapper
+.yt-player-settings {
+  right: 0;
+
+  bottom: 48px;
+}
+
+
+/* Keyboard Focus */
+.yt-player-control-button:focus-visible {
+  outline: 2px solid #fff;
+
+  outline-offset: 2px;
+}
+
+
+/* Tablet */
+@media (max-width: 768px) {
+  .yt-player-controls {
+    padding:
+      0 8px 6px;
+  }
+
+  .yt-player-control-button {
+    width: 36px;
+
+    height: 36px;
+  }
+
+  .yt-player-control-button
+  svg {
+    font-size: 23px;
+  }
+
+  .yt-player-time {
+    font-size: 12px;
+  }
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+  .yt-player-volume-slider {
+    display: none;
+  }
+
+  .yt-player-time {
+    margin-left: 2px;
+
+    font-size: 11px;
+  }
+
+  .yt-player-control-button {
+    width: 34px;
+
+    height: 34px;
+  }
+
+  .yt-player-control-button
+  svg {
+    font-size: 21px;
+  }
+}

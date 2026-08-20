@@ -1,0 +1,39 @@
+/* Icon Button */
+.yt-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: var(--radius-full);
+
+  background: transparent;
+
+  transition:
+    background-color var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+/* Hover */
+.yt-icon-btn:hover:not(:disabled) {
+  background-color: var(--yt-hover);
+}
+
+/* Active */
+.yt-icon-btn:active:not(:disabled) {
+  background-color: var(--yt-hover-dark);
+  transform: scale(0.96);
+}
+
+/* Disabled */
+.yt-icon-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Icon */
+.yt-icon-btn svg {
+  font-size: var(--icon-size);
+}

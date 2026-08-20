@@ -1,0 +1,73 @@
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.input-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--yt-text-primary, #0f0f0f);
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper input {
+  width: 100%;
+  height: 48px;
+
+  padding: 0 44px 0 14px;
+
+  border: 1px solid var(--yt-border, #d3d3d3);
+  border-radius: 8px;
+
+  outline: none;
+
+  font-size: 15px;
+
+  transition: border-color .2s, box-shadow .2s;
+
+  box-sizing: border-box;
+}
+
+.input-wrapper input:focus {
+  border-color: var(--yt-text-primary);
+  box-shadow: 0 0 0 2px rgba(6,95,212,.15);
+}
+
+.has-error input {
+  border-color: #d93025;
+}
+
+.input-right {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  display: flex;
+  align-items: center;
+}
+
+.input-error {
+  font-size: 12px;
+  color: #d93025;
+}
+
+.password-toggle {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #606060;
+}
+
+.password-toggle:hover {
+  color: var(--yt-text-primary);
+}

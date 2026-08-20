@@ -1,0 +1,52 @@
+/* Sign In Card */
+.yt-sidebar-signin {
+  padding: var(--space-4);
+}
+
+/* Description */
+.yt-sidebar-signin-text {
+  margin: 0 0 var(--space-4);
+
+  color: var(--yt-text-primary);
+
+  font-size: var(--font-base);
+
+  line-height: 1.45;
+}
+
+/* Sign In Button */
+.yt-sidebar-signin-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: var(--space-2);
+
+  height: 36px;
+
+  padding: 0 var(--space-4);
+
+  border: 1px solid var(--yt-border);
+  border-radius: var(--radius-full);
+
+  background: transparent;
+
+  color: var(--yt-blue);
+
+  font-size: var(--font-base);
+  font-weight: var(--font-weight-medium);
+
+  transition:
+    background-color var(--transition-fast),
+    border-color var(--transition-fast);
+
+  white-space: nowrap;
+}
+
+.yt-sidebar-signin-button:hover {
+  background: rgba(6, 95, 212, 0.08);
+}
+
+.yt-sidebar-signin-button svg {
+  font-size: var(--icon-size);
+}

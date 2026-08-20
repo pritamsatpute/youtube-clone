@@ -1,0 +1,142 @@
+/* Playlists */
+.yt-channel-playlists {
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--space-6);
+}
+
+/* Card */
+.yt-playlist-card {
+  display: flex;
+  align-items: flex-start;
+
+  gap: var(--space-5);
+}
+
+/* Thumbnail */
+.yt-playlist-thumbnail-link {
+  position: relative;
+
+  width: 320px;
+
+  flex-shrink: 0;
+
+  text-decoration: none;
+}
+
+.yt-playlist-thumbnail {
+  display: block;
+
+  width: 100%;
+
+  aspect-ratio: 16 / 9;
+
+  object-fit: cover;
+
+  border-radius: var(--radius-lg);
+}
+
+/* Count */
+.yt-playlist-count {
+  position: absolute;
+
+  right: var(--space-2);
+  bottom: var(--space-2);
+
+  padding: 4px 8px;
+
+  border-radius: var(--radius-sm);
+
+  background: rgba(15,15,15,.9);
+
+  color: #fff;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+/* Content */
+.yt-playlist-content {
+  flex: 1;
+}
+
+/* Title */
+.yt-playlist-title {
+  display: block;
+
+  color: var(--yt-text-primary);
+
+  text-decoration: none;
+
+  font-size: var(--font-lg);
+
+  font-weight: var(--font-weight-semibold);
+}
+
+.yt-playlist-title:hover {
+  color: var(--yt-blue);
+}
+
+/* Meta */
+.yt-playlist-meta {
+  margin-top: var(--space-2);
+
+  color: var(--yt-text-secondary);
+
+  font-size: var(--font-sm);
+}
+
+/* Link */
+.yt-playlist-link {
+  display: inline-block;
+
+  margin-top: var(--space-4);
+
+  color: var(--yt-blue);
+
+  text-decoration: none;
+
+  font-size: var(--font-sm);
+
+  font-weight: var(--font-weight-medium);
+}
+
+.yt-playlist-link:hover {
+  text-decoration: underline;
+}
+
+/* Empty */
+.yt-channel-playlists-empty {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  min-height: 260px;
+
+  text-align: center;
+}
+
+.yt-channel-playlists-empty h2 {
+  margin-bottom: var(--space-2);
+}
+
+.yt-channel-playlists-empty p {
+  color: var(--yt-text-secondary);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+
+  .yt-playlist-card {
+    flex-direction: column;
+  }
+
+  .yt-playlist-thumbnail-link {
+    width: 100%;
+  }
+
+}

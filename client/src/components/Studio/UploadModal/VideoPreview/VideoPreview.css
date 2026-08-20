@@ -1,0 +1,99 @@
+/* Sidebar */
+.yt-video-preview {
+  position: sticky;
+
+  top: 24px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 18px;
+
+  padding: 20px;
+
+  border: 1px solid var(--yt-divider);
+
+  border-radius: 12px;
+
+  background: var(--yt-hover);
+
+  height: fit-content;
+}
+
+/* Heading */
+.yt-video-preview h3 {
+  margin: 0;
+
+  font-size: 16px;
+
+  font-weight: 500;
+}
+
+/* Preview */
+.yt-preview-player {
+  overflow: hidden;
+
+  border-radius: 12px;
+
+  background: #000;
+
+  aspect-ratio: 16 / 9;
+}
+
+.yt-preview-player video,
+.yt-preview-player img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+.yt-preview-player svg {
+  width: 100%;
+
+  height: 100%;
+
+  padding: 56px;
+
+  color: #888;
+}
+
+/* Info */
+.yt-preview-info {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 14px;
+}
+
+.yt-preview-row {
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 16px;
+
+  font-size: 13px;
+}
+
+.yt-preview-row span {
+  color: var(--yt-text-secondary);
+}
+
+.yt-preview-row strong {
+  text-align: right;
+
+  word-break: break-word;
+
+  font-weight: 500;
+}
+
+/* Status */
+.yt-preview-row .ready {
+  color: #16a34a;
+}

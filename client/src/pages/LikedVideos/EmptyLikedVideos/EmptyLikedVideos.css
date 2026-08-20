@@ -1,0 +1,61 @@
+/* Empty State */
+.empty-liked {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-height: 360px;
+
+  padding: 40px 20px;
+
+  text-align: center;
+}
+
+/* Icon */
+.empty-liked-icon {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 72px;
+
+  height: 72px;
+
+  margin-bottom: 20px;
+
+  border-radius: 50%;
+
+  background: var(--yt-hover);
+}
+
+.empty-liked-icon svg {
+  font-size: 36px;
+
+  color: var(--yt-text-secondary);
+}
+
+/* Title */
+.empty-liked h2 {
+  margin: 0;
+
+  color: var(--yt-text-primary);
+
+  font-size: 20px;
+
+  font-weight: 600;
+}
+
+/* Description */
+.empty-liked p {
+  margin: 8px 0 0;
+
+  color: var(--yt-text-secondary);
+
+  font-size: 14px;
+}

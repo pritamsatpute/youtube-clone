@@ -1,0 +1,193 @@
+/* Layout */
+.yt-video-details {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 32px;
+  padding: 24px;
+}
+
+/* Left */
+.yt-details-form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* Input */
+.yt-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.yt-input-group label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--yt-text-secondary);
+}
+
+.yt-input-group textarea {
+  width: 100%;
+  padding: 14px 16px;
+
+  border: 1px solid var(--yt-divider);
+  border-radius: 12px;
+
+  background: var(--yt-hover);
+
+  color: var(--yt-text-primary);
+
+  resize: vertical;
+
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.5;
+
+  transition:
+    border-color .15s,
+    box-shadow .15s;
+}
+
+.yt-input-group textarea:hover {
+  border-color: var(--yt-text-secondary);
+}
+
+.yt-input-group textarea:focus {
+  outline: none;
+
+  border-color: var(--yt-text-primary);
+
+  box-shadow: 0 0 0 1px var(--yt-text-primary);
+}
+
+.yt-input-group span {
+  align-self: flex-end;
+
+  font-size: 12px;
+
+  color: var(--yt-text-secondary);
+}
+
+/* Cards */
+.yt-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  padding: 18px;
+
+  border: 1px solid var(--yt-divider);
+
+  border-radius: 12px;
+
+  background: var(--yt-hover);
+}
+
+.yt-card h3 {
+  margin: 0;
+
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.yt-card label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 14px;
+
+  cursor: pointer;
+}
+
+.yt-card input[type="radio"] {
+  width: 18px;
+  height: 18px;
+}
+
+.yt-card select {
+  height: 42px;
+
+  padding: 0 14px;
+
+  border: 1px solid var(--yt-divider);
+
+  border-radius: 10px;
+
+  background: var(--yt-hover);
+
+  color: var(--yt-text-primary);
+
+  font-size: 14px;
+}
+
+.yt-card select:hover {
+  border-color: var(--yt-text-secondary);
+}
+
+.yt-card select:focus {
+  outline: none;
+
+  border-color: var(--yt-text-primary);
+}
+
+/* Footer */
+.yt-details-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+
+  padding: 16px 24px;
+
+  border-top: 1px solid var(--yt-divider);
+}
+
+/* Buttons */
+.yt-cancel-btn,
+.yt-next-btn {
+  height: 36px;
+
+  padding: 0 18px;
+
+  border-radius: 999px;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: .15s;
+}
+
+/* Cancel */
+.yt-cancel-btn {
+  border: none;
+
+  background: var(--yt-hover-dark);
+
+  color: var(--yt-text-primary);
+}
+
+.yt-cancel-btn:hover {
+  background: var(--yt-hover);
+}
+
+/* Upload */
+.yt-next-btn {
+  border: none;
+
+  background: var(--yt-text-primary);
+
+  color: var(--yt-bg);
+}
+
+.yt-next-btn:hover:not(:disabled) {
+  opacity: .92;
+}
+
+.yt-next-btn:disabled {
+  opacity: .45;
+
+  cursor: not-allowed;
+}

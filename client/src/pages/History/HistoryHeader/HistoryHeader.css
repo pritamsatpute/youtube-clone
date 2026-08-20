@@ -1,0 +1,43 @@
+/* History Header */
+.yt-history-header {
+  display: flex;
+
+  align-items: center;
+
+  width: 100%;
+
+  min-height: 40px;
+}
+
+/* Title */
+.yt-history-header-title {
+  margin: 0;
+
+  color: var(--yt-text-primary);
+
+  font-size: 24px;
+
+  font-weight: 500;
+
+  line-height: 1.35;
+
+  letter-spacing: -0.2px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .yt-history-header {
+    min-height: 36px;
+  }
+
+  .yt-history-header-title {
+    font-size: 21px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .yt-history-header-title {
+    font-size: 19px;
+  }
+}

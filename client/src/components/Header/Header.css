@@ -1,0 +1,233 @@
+/* Header */
+
+.yt-header {
+  position: fixed;
+  inset: 0 0 auto 0;
+
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  height: var(--header-height);
+
+  padding: 0 16px;
+
+  box-sizing: border-box;
+
+  background-color: var(--yt-bg);
+
+  z-index: var(--header-z-index);
+}
+
+/* Header Left */
+
+.yt-header-left {
+  display: flex;
+  align-items: center;
+
+  flex: 0 0 auto;
+
+  min-width: 169px;
+}
+
+/* Menu Icon */
+
+.yt-menu-icon {
+  font-size: 24px !important;
+}
+
+/* Logo */
+
+.yt-logo-link {
+  display: flex;
+  align-items: center;
+
+  margin-left: 12px;
+
+  flex-shrink: 0;
+}
+
+.yt-logo {
+  display: block;
+
+  width: auto;
+  height: 20px;
+
+  object-fit: contain;
+}
+
+/* Header Center */
+
+.yt-header-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex: 1;
+
+  min-width: 0;
+
+  margin: 0 32px;
+}
+
+/* Search Container */
+
+.yt-header-center .yt-searchbar {
+  width: 100%;
+  max-width: 728px;
+}
+
+/* Header Right */
+
+.yt-header-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  flex: 0 0 auto;
+
+  min-width: 169px;
+}
+
+/* Mobile Search Button */
+
+.yt-mobile-search-button {
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+
+  flex: 0 0 40px;
+
+  margin-left: 8px;
+  padding: 0;
+
+  border: none;
+  border-radius: 50%;
+
+  background: transparent;
+
+  color: var(--yt-text-primary);
+
+  cursor: pointer;
+}
+
+.yt-mobile-search-button:hover {
+  background: var(--yt-hover);
+}
+
+.yt-mobile-search-button:active {
+  background: var(--yt-hover-dark);
+}
+
+.yt-mobile-search-button svg {
+  font-size: 24px;
+}
+
+/* Icon Button */
+
+.yt-icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+
+  padding: 0;
+
+  border: none;
+  border-radius: var(--radius-full);
+
+  background: transparent;
+
+  color: var(--yt-text-primary);
+
+  cursor: pointer;
+
+  transition: background-color 0.15s ease;
+}
+
+.yt-icon-button:hover {
+  background-color: var(--yt-hover);
+}
+
+.yt-icon-button:active {
+  background-color: var(--yt-hover-dark);
+}
+
+.yt-icon-button svg {
+  font-size: 24px;
+}
+
+/* Large Tablet */
+
+@media (max-width: 1100px) {
+  .yt-header {
+    padding: 0 12px;
+  }
+
+  .yt-header-left {
+    min-width: auto;
+  }
+
+  .yt-header-center {
+    margin: 0 20px;
+  }
+
+  .yt-header-right {
+    min-width: auto;
+  }
+}
+
+/* Tablet And Mobile Header */
+@media (max-width: 900px) {
+  .yt-header {
+    justify-content: space-between;
+
+    padding: 0 12px;
+  }
+
+  /* Hide Hamburger */
+  .yt-header-left .yt-icon-button {
+    display: none;
+  }
+
+  /* Header Left */
+  .yt-header-left {
+    min-width: 0;
+
+    margin-right: 0;
+  }
+
+  /* Remove Logo Margin */
+  .yt-logo-link {
+    margin-left: 0;
+  }
+
+  /* Hide Full Search Bar */
+  .yt-header-center {
+    display: none;
+  }
+
+  /* Hide Desktop Account Menu */
+  .yt-header-right {
+    display: none;
+  }
+
+  /* Show Search Icon */
+  .yt-mobile-search-button {
+    display: flex;
+
+    margin-left: auto;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .yt-header {
+    padding: 0 8px;
+  }
+}

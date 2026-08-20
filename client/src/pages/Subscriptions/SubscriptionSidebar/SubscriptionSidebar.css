@@ -1,0 +1,49 @@
+/* Subscription Sidebar */
+.subscriptions-sidebar {
+  width: 240px;
+
+  flex-shrink: 0;
+
+  padding: 4px 0;
+}
+
+/* Title */
+.subscriptions-sidebar h2 {
+  margin: 0 0 16px;
+
+  padding: 0 12px;
+
+  color: var(--yt-text-primary);
+
+  font-size: 18px;
+
+  font-weight: 500;
+}
+
+/* List */
+.subscriptions-sidebar-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 2px;
+}
+
+/* Tablet */
+@media (max-width: 1000px) {
+  .subscriptions-sidebar {
+    width: 100%;
+  }
+
+  .subscriptions-sidebar-list {
+    display: grid;
+
+    grid-template-columns:
+      repeat(
+        auto-fill,
+        minmax(180px, 1fr)
+      );
+
+    gap: 8px;
+  }
+}

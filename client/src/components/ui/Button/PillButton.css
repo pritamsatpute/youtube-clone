@@ -1,0 +1,65 @@
+/* Pill Button */
+.yt-pill-btn {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 6px;
+
+  height: 40px;
+
+  padding: 0 16px;
+
+  border: none;
+
+  border-radius: 20px;
+
+  background: var(--yt-hover);
+
+  color: var(--yt-text-primary);
+
+  cursor: pointer;
+
+  white-space: nowrap;
+
+  transition:
+    background-color .15s ease,
+    color .15s ease;
+}
+
+/* Text */
+.yt-pill-btn span {
+  font-size: 14px;
+
+  font-weight: 500;
+
+  line-height: 1;
+}
+
+/* Icon */
+.yt-pill-btn svg {
+  font-size: 20px;
+
+  flex-shrink: 0;
+}
+
+/* Hover */
+.yt-pill-btn:hover:not(:disabled) {
+  background: var(--yt-hover-dark);
+}
+
+/* Focus */
+.yt-pill-btn:focus-visible {
+  outline: 2px solid var(--yt-blue);
+
+  outline-offset: 2px;
+}
+
+/* Disabled */
+.yt-pill-btn:disabled {
+  opacity: .45;
+
+  cursor: not-allowed;
+}

@@ -1,0 +1,133 @@
+.login-card h1 {
+  font-size: 32px;
+  font-weight: 500;
+
+  margin-bottom: 8px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.form-group input {
+  height: 48px;
+
+  padding: 0 14px;
+
+  border: 1px solid #dadce0;
+
+  border-radius: 8px;
+
+  font-size: 15px;
+
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: var(--yt-text-primary);
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 50px;
+  box-sizing: border-box;
+}
+
+.password-toggle {
+  position: absolute;
+
+  top: 50%;
+  right: 10px;
+
+  transform: translateY(-50%);
+
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+}
+
+.forgot-password-link {
+  color: var(--yt-blue);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.login-btn {
+  height: 48px;
+
+  border: none;
+
+  border-radius: 999px;
+
+  background: var(--yt-text-primary);
+
+  color: var(--yt-bg);
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.login-btn:hover:not(:disabled) {
+  background: var(--yt-text-secondary);
+}
+
+.login-footer {
+  margin-top: 32px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 14px;
+}
+
+.login-footer a {
+  text-decoration: none;
+  color: var(--yt-blue);
+  font-weight: 600;
+}
+
+.input-error {
+  color: #d93025;
+  font-size: 12px;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.login-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .login-card {
+    border: none;
+    padding: 20px;
+  }
+}

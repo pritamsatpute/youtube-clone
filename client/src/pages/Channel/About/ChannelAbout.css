@@ -1,0 +1,199 @@
+/* About */
+.yt-channel-about {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    320px;
+
+  align-items: start;
+
+  gap: var(--space-10);
+
+  width: 100%;
+}
+
+/* Left */
+.yt-about-left {
+  min-width: 0;
+}
+
+/* Heading */
+.yt-about-heading {
+  margin: 0;
+
+  color: var(--yt-text-primary);
+
+  font-size: 20px;
+
+  font-weight: var(--font-weight-semibold);
+
+  line-height: 1.4;
+}
+
+/* Description */
+.yt-about-description {
+  max-width: 800px;
+
+  margin: var(--space-4) 0 0;
+
+  color: var(--yt-text-primary);
+
+  font-size: var(--font-md);
+
+  line-height: 1.7;
+
+  white-space: pre-wrap;
+
+  word-break: break-word;
+}
+
+/* Links Section */
+.yt-about-links-section {
+  margin-top: var(--space-8);
+}
+
+/* Links */
+.yt-about-links {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: var(--space-3);
+
+  margin-top: var(--space-4);
+}
+
+/* Link */
+.yt-about-link {
+  width: fit-content;
+
+  max-width: 100%;
+
+  color: var(--yt-blue);
+
+  font-size: var(--font-sm);
+
+  text-decoration: none;
+
+  overflow-wrap: anywhere;
+}
+
+.yt-about-link:hover {
+  text-decoration: underline;
+}
+
+/* Right */
+.yt-about-right {
+  width: 100%;
+}
+
+/* Details Card */
+.yt-about-card {
+  width: 100%;
+
+  padding: var(--space-5);
+
+  border: 1px solid var(--yt-border);
+
+  border-radius: var(--radius-lg);
+
+  background: var(--yt-bg);
+}
+
+/* Card Title */
+.yt-about-card-title {
+  margin: 0 0 var(--space-4);
+
+  color: var(--yt-text-primary);
+
+  font-size: 18px;
+
+  font-weight: var(--font-weight-semibold);
+}
+
+/* Detail Row */
+.yt-about-row {
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  gap: var(--space-4);
+
+  padding: var(--space-3) 0;
+
+  border-bottom: 1px solid var(--yt-border);
+
+  font-size: var(--font-sm);
+}
+
+/* Remove Last Border */
+.yt-about-row:last-child {
+  border-bottom: none;
+}
+
+/* Label */
+.yt-about-row span {
+  flex-shrink: 0;
+
+  color: var(--yt-text-secondary);
+}
+
+/* Value */
+.yt-about-row strong {
+  min-width: 0;
+
+  color: var(--yt-text-primary);
+
+  font-weight: var(--font-weight-medium);
+
+  text-align: right;
+
+  overflow-wrap: anywhere;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .yt-channel-about {
+    grid-template-columns: 1fr;
+
+    gap: var(--space-8);
+  }
+
+  .yt-about-right {
+    max-width: 500px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .yt-channel-about {
+    gap: var(--space-6);
+  }
+
+  .yt-about-heading {
+    font-size: 18px;
+  }
+
+  .yt-about-description {
+    margin-top: var(--space-3);
+
+    font-size: var(--font-sm);
+
+    line-height: 1.6;
+  }
+
+  .yt-about-links-section {
+    margin-top: var(--space-6);
+  }
+
+  .yt-about-card {
+    padding: var(--space-4);
+  }
+
+  .yt-about-row {
+    gap: var(--space-3);
+  }
+}

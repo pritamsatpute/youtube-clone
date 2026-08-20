@@ -1,0 +1,85 @@
+/* Reply List */
+.yt-reply-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 18px;
+
+  margin-top: 16px;
+
+  margin-left: 56px;
+}
+
+/* Reply */
+.yt-reply-item {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 12px;
+}
+
+/* Avatar */
+.yt-reply-avatar {
+  width: 28px;
+
+  height: 28px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+  flex-shrink: 0;
+}
+
+/* Body */
+.yt-reply-body {
+  flex: 1;
+
+  min-width: 0;
+}
+
+/* Header */
+.yt-reply-header {
+  display: flex;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 6px;
+
+  margin-bottom: 3px;
+}
+
+/* Author */
+.yt-reply-author {
+  color: var(--yt-text-primary);
+
+  font-size: 13px;
+
+  font-weight: 500;
+}
+
+/* Time */
+.yt-reply-time {
+  color: var(--yt-text-secondary);
+
+  font-size: 12px;
+}
+
+/* Text */
+.yt-reply-text {
+  margin: 0;
+
+  color: var(--yt-text-primary);
+
+  font-size: 14px;
+
+  line-height: 1.5;
+
+  white-space: pre-wrap;
+
+  word-break: break-word;
+}

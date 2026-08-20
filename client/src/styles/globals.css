@@ -1,0 +1,74 @@
+/* -- GLOBAL STYLES -- */
+
+/* HTML */
+html {
+  overflow-y: scroll;
+
+  background-color: var(--yt-bg, #0f0f0f);
+}
+
+/* Document */
+html,
+body,
+#root {
+  width: 100%;
+
+  min-height: 100%;
+}
+
+/* Body */
+body {
+  margin: 0;
+
+  overflow-x: hidden;
+
+  background-color: var(--yt-bg, #0f0f0f);
+
+  color: var(--yt-text-primary, #f1f1f1);
+}
+
+/* Root Application */
+#root {
+  min-height: 100vh;
+
+  display: flex;
+
+  flex-direction: column;
+
+  background-color: var(--yt-bg, #0f0f0f);
+}
+
+/* SCROLLBAR */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #909090 transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #909090;
+  border-radius: var(--radius-full);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #707070;
+}
+
+/* TEXT SELECTION */
+::selection {
+  background: rgba(6, 95, 212, 0.2);
+}
+
+/* COMMON ELEMENTS */
+hr {
+  border: 0;
+  border-top: 1px solid var(--yt-divider);
+}

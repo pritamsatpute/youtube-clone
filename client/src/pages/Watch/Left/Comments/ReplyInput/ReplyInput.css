@@ -1,0 +1,107 @@
+/* Reply Input */
+.yt-reply-input {
+  margin-top: 12px;
+
+  margin-left: 56px;
+}
+
+/* Textbox */
+.yt-reply-textbox {
+  width: 100%;
+
+  padding: 8px 0;
+
+  border: none;
+
+  border-bottom: 1px solid
+    var(--yt-divider);
+
+  background: transparent;
+
+  color: var(--yt-text-primary);
+
+  font-size: 14px;
+
+  outline: none;
+
+  transition:
+    border-color .15s ease;
+}
+
+/* Placeholder */
+.yt-reply-textbox::placeholder {
+  color: var(--yt-text-secondary);
+}
+
+/* Focus */
+.yt-reply-textbox:focus {
+  border-bottom: 2px solid
+    var(--yt-text-primary);
+}
+
+/* Actions */
+.yt-reply-actions {
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 10px;
+
+  margin-top: 12px;
+}
+
+/* Buttons */
+.yt-reply-cancel,
+.yt-reply-submit {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  height: 36px;
+
+  padding: 0 16px;
+
+  border: none;
+
+  border-radius: 999px;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition:
+    background-color .15s ease,
+    opacity .15s ease;
+}
+
+/* Cancel */
+.yt-reply-cancel {
+  background: transparent;
+
+  color: var(--yt-text-primary);
+}
+
+.yt-reply-cancel:hover {
+  background: var(--yt-hover);
+}
+
+/* Reply */
+.yt-reply-submit {
+  background: var(--yt-text-primary);
+
+  color: var(--yt-bg);
+}
+
+.yt-reply-submit:hover:not(:disabled) {
+  opacity: .92;
+}
+
+.yt-reply-submit:disabled {
+  opacity: .45;
+
+  cursor: not-allowed;
+}

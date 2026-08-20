@@ -1,0 +1,78 @@
+/* Keyboard Shortcuts Dialog */
+.yt-shortcuts-dialog {
+  max-width: 560px;
+}
+
+/* Header */
+.yt-shortcuts-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 20px 24px;
+
+  border-bottom: 1px solid var(--yt-border);
+}
+
+/* Title */
+.yt-shortcuts-header h2 {
+  margin: 0;
+
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Close Button */
+.yt-shortcuts-close {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 50%;
+
+  background: transparent;
+
+  cursor: pointer;
+
+  transition: background-color var(--transition-fast);
+}
+
+.yt-shortcuts-close:hover {
+  background: var(--yt-hover);
+}
+
+/* Shortcut List */
+.yt-shortcuts-list {
+  padding: 12px 0;
+}
+
+/* Shortcut Row */
+.yt-shortcuts-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 24px;
+
+  padding: 12px 24px;
+}
+
+/* Shortcut Key */
+.yt-shortcuts-key {
+  min-width: 180px;
+
+  font-weight: 500;
+}
+
+/* Shortcut Action */
+.yt-shortcuts-action {
+  flex: 1;
+
+  text-align: right;
+
+  color: var(--yt-text-secondary);
+}

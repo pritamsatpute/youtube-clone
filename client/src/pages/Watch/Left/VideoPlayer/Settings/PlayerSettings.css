@@ -1,0 +1,271 @@
+/* Settings */
+.yt-player-settings {
+  position: absolute;
+
+  right: 0;
+  bottom: 48px;
+
+  z-index: 30;
+}
+
+
+/* Menu */
+.yt-player-settings-menu {
+  min-width: 240px;
+
+  max-width: 300px;
+
+  padding: 8px;
+
+  border-radius: 8px;
+
+  background: rgba(
+    28,
+    28,
+    28,
+    0.98
+  );
+
+  box-shadow:
+    0 4px 16px
+      rgba(0, 0, 0, 0.45);
+
+  color: #fff;
+}
+
+
+/* Item */
+.yt-player-settings-item {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  width: 100%;
+
+  min-height: 44px;
+
+  padding: 0 10px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background: transparent;
+
+  color: #fff;
+
+  font-size: 14px;
+
+  text-align: left;
+
+  cursor: pointer;
+}
+
+
+/* Item Hover */
+.yt-player-settings-item:hover {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.1
+  );
+}
+
+
+/* Value */
+.yt-player-settings-value {
+  display: flex;
+
+  align-items: center;
+
+  gap: 2px;
+
+  color: #aaa;
+
+  font-size: 13px;
+}
+
+
+.yt-player-settings-value svg {
+  font-size: 20px;
+}
+
+
+/* Header */
+.yt-player-settings-header {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  width: 100%;
+
+  min-height: 44px;
+
+  padding: 0 6px;
+
+  border: none;
+
+  border-bottom: 1px solid
+    rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+
+  background: transparent;
+
+  color: #fff;
+
+  font-size: 15px;
+
+  font-weight: 500;
+
+  text-align: left;
+
+  cursor: pointer;
+}
+
+
+/* Header Hover */
+.yt-player-settings-header:hover {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.08
+  );
+}
+
+
+/* Header Icon */
+.yt-player-settings-header svg {
+  font-size: 22px;
+}
+
+
+/* Options */
+.yt-player-settings-options {
+  display: flex;
+
+  flex-direction: column;
+
+  max-height: 320px;
+
+  overflow-y: auto;
+
+  padding-top: 4px;
+}
+
+
+/* Option */
+.yt-player-settings-option {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  width: 100%;
+
+  min-height: 42px;
+
+  padding: 0 10px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background: transparent;
+
+  color: #fff;
+
+  font-size: 14px;
+
+  text-align: left;
+
+  cursor: pointer;
+}
+
+
+/* Option Hover */
+.yt-player-settings-option:hover:not(
+  :disabled
+) {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.1
+  );
+}
+
+
+/* Active */
+.yt-player-settings-option.active {
+  font-weight: 500;
+}
+
+
+/* Disabled */
+.yt-player-settings-option:disabled {
+  color: #777;
+
+  cursor: default;
+}
+
+
+/* Check */
+.yt-player-settings-option svg {
+  font-size: 20px;
+}
+
+
+/* Note */
+.yt-player-settings-note {
+  margin: 8px 10px;
+
+  color: #999;
+
+  font-size: 12px;
+
+  line-height: 1.45;
+}
+
+
+/* Scrollbar */
+.yt-player-settings-options::-webkit-scrollbar {
+  width: 4px;
+}
+
+
+.yt-player-settings-options::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+
+  background: rgba(
+    255,
+    255,
+    255,
+    0.3
+  );
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+  .yt-player-settings {
+    right: 0;
+
+    bottom: 44px;
+  }
+
+
+  .yt-player-settings-menu {
+    min-width: 220px;
+  }
+}

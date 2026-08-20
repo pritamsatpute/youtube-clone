@@ -1,0 +1,29 @@
+/* Results */
+.yt-search-results {
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--space-6);
+}
+
+/* Empty */
+.yt-search-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 300px;
+
+  text-align: center;
+}
+
+.yt-search-empty h2 {
+  margin-bottom: var(--space-2);
+
+  color: var(--yt-text-primary);
+}
+
+.yt-search-empty p {
+  color: var(--yt-text-secondary);
+}
