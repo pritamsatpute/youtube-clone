@@ -913,8 +913,8 @@ The frontend uses Vite instead of Create React App.
 
 ## GitHub Repository
 
-YOUR_GITHUB_REPOSITORY_URL
+https://pritamsatpute.github.io/youtube-clone/
 
 ## Live Application
 
-YOUR_LIVE_APPLICATION_URL
+NO_LIVE_APPLICATION_YET
