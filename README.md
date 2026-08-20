@@ -859,53 +859,115 @@ The frontend uses Vite instead of Create React App.
 
 # Screenshots
 
-### Home Page
-<img width="1920" height="1080" alt="home" src="https://github.com/user-attachments/assets/8228a6d9-99c0-4aa6-aeb4-452070be11e0" />
+# Screenshots
 
-### Registration Page
-<img width="1920" height="1080" alt="registation" src="https://github.com/user-attachments/assets/35baeeec-39a6-4bd0-bfe8-8c91aff8a9d6" />
+## Main Interface
 
-### Login Page
-<img width="1920" height="1080" alt="login" src="https://github.com/user-attachments/assets/f43eea62-cdf1-4f7a-93e6-8f87b9068cd7" />
+<p align="center">
+  <img width="48%" alt="Home Page" src="https://github.com/user-attachments/assets/8228a6d9-99c0-4aa6-aeb4-452070be11e0" />
+  <img width="48%" alt="Search Results" src="https://github.com/user-attachments/assets/b3e55979-6376-408a-83d0-6490fe308aee" />
+</p>
 
-### Search Results
-<img width="1920" height="1080" alt="search" src="https://github.com/user-attachments/assets/b3e55979-6376-408a-83d0-6490fe308aee" />
+<p align="center">
+  <b>Home Page</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Search Results</b>
+</p>
 
-### Category Filtering
-<img width="1920" height="1080" alt="category" src="https://github.com/user-attachments/assets/56a0edf2-1187-4b47-bb72-1659afa562ff" />
+<br />
 
-### Video Player
-<img width="1920" height="1080" alt="video-player" src="https://github.com/user-attachments/assets/33d7d505-37bf-4218-9393-c06ba1c35f1d" />
+<p align="center">
+  <img width="48%" alt="Category Filtering" src="https://github.com/user-attachments/assets/56a0edf2-1187-4b47-bb72-1659afa562ff" />
+  <img width="48%" alt="Dark Theme" src="https://github.com/user-attachments/assets/f54424aa-b253-405b-8d0e-13198b3df22b" />
+</p>
 
-### Comments
-<img width="1920" height="1080" alt="comments" src="https://github.com/user-attachments/assets/b9a1326a-13f6-4797-87a2-e1b9f40089e5" />
+<p align="center">
+  <b>Category Filtering</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Dark Theme</b>
+</p>
 
-### Channel Page
-<img width="1920" height="1080" alt="channel" src="https://github.com/user-attachments/assets/2158013e-2937-41a0-8ab2-502698949232" />
+---
 
-### Upload Video
-<img width="1920" height="1080" alt="upload" src="https://github.com/user-attachments/assets/383624ff-238f-4d8a-a3d6-eb55e2e66bc3" />
+## Authentication
 
-### Manage Videos
-<img width="1920" height="1080" alt="manage-video" src="https://github.com/user-attachments/assets/e8dfb6cc-8b0e-468b-bc21-d0e160d1840d" />
+<p align="center">
+  <img width="48%" alt="Registration Page" src="https://github.com/user-attachments/assets/35baeeec-39a6-4bd0-bfe8-8c91aff8a9d6" />
+  <img width="48%" alt="Login Page" src="https://github.com/user-attachments/assets/f43eea62-cdf1-4f7a-93e6-8f87b9068cd7" />
+</p>
 
-### History
-<img width="1920" height="1080" alt="history" src="https://github.com/user-attachments/assets/113613a6-bc9a-4582-84f7-baefb6b03c87" />
+<p align="center">
+  <b>Registration Page</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Login Page</b>
+</p>
 
-### Subscriptions
-<img width="1920" height="1080" alt="subscriptions" src="https://github.com/user-attachments/assets/ce08d519-ef67-4ac7-b9d6-d0aeec2829cc" />
+---
 
-### Notifications
-<img width="1920" height="1080" alt="notification" src="https://github.com/user-attachments/assets/8e3cba04-a425-41b2-b294-734b9f583716" />
+## Video Experience
 
-### Dark Theme
-<img width="1920" height="1080" alt="dark-theme" src="https://github.com/user-attachments/assets/f54424aa-b253-405b-8d0e-13198b3df22b" />
+<p align="center">
+  <img width="48%" alt="Video Player" src="https://github.com/user-attachments/assets/33d7d505-37bf-4218-9393-c06ba1c35f1d" />
+  <img width="48%" alt="Comments" src="https://github.com/user-attachments/assets/b9a1326a-13f6-4797-87a2-e1b9f40089e5" />
+</p>
 
-### Mobile Responsive Layout
-<img width="750" height="1334" alt="mobile" src="https://github.com/user-attachments/assets/63e85640-f556-42af-9f98-483d7a4c93d5" />
+<p align="center">
+  <b>Video Player</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Comments</b>
+</p>
 
-### Tablet Responsive Layout
-<img width="1536" height="2048" alt="tablet" src="https://github.com/user-attachments/assets/c3b806f8-536c-42f6-88a1-0b25a5ce75fc" />
+---
+
+## Channel & Video Management
+
+<p align="center">
+  <img width="48%" alt="Channel Page" src="https://github.com/user-attachments/assets/2158013e-2937-41a0-8ab2-502698949232" />
+  <img width="48%" alt="Upload Video" src="https://github.com/user-attachments/assets/383624ff-238f-4d8a-a3d6-eb55e2e66bc3" />
+</p>
+
+<p align="center">
+  <b>Channel Page</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Upload Video</b>
+</p>
+
+<br />
+
+<p align="center">
+  <img width="48%" alt="Manage Videos" src="https://github.com/user-attachments/assets/e8dfb6cc-8b0e-468b-bc21-d0e160d1840d" />
+</p>
+
+<p align="center">
+  <b>Manage Videos</b>
+</p>
+
+---
+
+## User Features
+
+<p align="center">
+  <img width="32%" alt="History" src="https://github.com/user-attachments/assets/113613a6-bc9a-4582-84f7-baefb6b03c87" />
+  <img width="32%" alt="Subscriptions" src="https://github.com/user-attachments/assets/ce08d519-ef67-4ac7-b9d6-d0aeec2829cc" />
+  <img width="32%" alt="Notifications" src="https://github.com/user-attachments/assets/8e3cba04-a425-41b2-b294-734b9f583716" />
+</p>
+
+<p align="center">
+  <b>History</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Subscriptions</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Notifications</b>
+</p>
+
+---
+
+## Responsive Design
+
+<p align="center">
+  <img width="30%" alt="Mobile Responsive Layout" src="https://github.com/user-attachments/assets/63e85640-f556-42af-9f98-483d7a4c93d5" />
+  &nbsp;&nbsp;
+  <img width="45%" alt="Tablet Responsive Layout" src="https://github.com/user-attachments/assets/c3b806f8-536c-42f6-88a1-0b25a5ce75fc" />
+</p>
+
+<p align="center">
+  <b>Mobile Responsive Layout</b>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Tablet Responsive Layout</b>
+</p>
 
 ------------------------------------------------------------------------
 
